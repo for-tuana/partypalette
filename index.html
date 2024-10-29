@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PartyPalette</title>
+    <style>
+        /* Varsayılan olarak tüm sayfalar gizli */
+        .page {
+            display: none;
+        }
+    
+        /* Aktif sayfa görünür */
+        .active {
+            display: block;
+        }
+    
+        /* Buton düzenlemesi */
+        .navigation button {
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="navigation">
+        <button onclick="showPage('page1')">Sayfa 1</button>
+        <button onclick="showPage('page2')">Sayfa 2</button>
+        <button onclick="showPage('page3')">Sayfa 3</button>
+    </div>
+
+    <div id="page1" class="page active">
     <header>
         <a href="./index.html">
             <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
@@ -146,5 +169,217 @@
             </ul>
         </div>
     </footer>
+
+    </div>
+
+    <div id="page2" class="page">
+        <header>
+            <a href="./index.html">
+                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                PartyPalette</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">log in</a>
+                    </li>
+                    <li>
+                        <a href="#">sign up</a>
+                    </li>
+                    <li>
+                        <a href="#">assistant</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Wedding</h1>
+                <p>You are getting married. Have you thought about planning this great day with the best planners in your city? A wedding
+                planner ensures that your wedding goes smoothly so that you and your friends and family can fully enjoy the big day.</p>
+            </section>
+
+            <div>
+                <div>
+                    <form action="/search" method="GET">
+                        <input type="text" name="query" placeholder="Search" required>
+                    </form>
+                </div>
+                <div>
+                    <div>
+                        <ul>
+                            <li>
+                                <img src="./images/Santorini.jpg" alt="Image of Santorini Planning">
+                                <h2>Santorini Planning Inc.</h2>
+                                <p>We're a company that specializes in the planning, development and decoration of social and business events; such as
+                                weddings, birthdays, anniversaries, baby showers, conferences...</p>
+                            </li>
+                            <li>
+                                <img src="./images/Sevilla.jpg" alt="Image of Sevilla Glam Wedding Designs">
+                                <h2>Sevilla Glam Wedding Designs</h2>
+                                <p>We offer both event planning and event support thanks to our knowledge and experience in wedding event planning. We can
+                                give you an idea of what your event will look like...</p>
+                            </li>
+                            <li>
+                                <img src="./images/Sicily.jpg" alt="Image of Sicily Wedding & Events">
+                                <h2>Sicily Weddings & Events</h2>
+                                <p>We are Sicily Weddings&Events, the premium wedding and events management company based in “your city”, comprising of a
+                                team of architects, designers, and well experienced wedding plan...</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Filters</h3>
+                        <hr>
+                        <p>Sort On</p>
+                        <button type="button">standard</button>
+                        <hr>
+                        <p>Region</p>
+                        <button type="button">Enter city,state,country...</button>
+                        <hr>
+                        <p>Budget</p>
+                        <button type="button">Min</button>
+                        <hr>
+                        <button type="button">Max</button>
+                        <hr>
+                        <p>Reviews</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="button">Previous</button>
+                        <button type="button">1</button>
+                        <button type="button">2</button>
+                        <button type="button">3</button>
+                        <button type="button">4</button>
+                        <p>...</p>
+                        <button type="button">9</button>
+                        <button type="button">Next</button>
+                    </div>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Event Planning Services</h4>
+                            <ul>
+                                <li>
+                                    <p>Wedding</p>
+                                    <p>Baby Shower</p>
+                                </li>
+                                <li>
+                                    <p>Bachelor's/Bachelorettes's Party</p>
+                                    <p>Gender Reveal Party</p>
+                                </li>
+                                <li>
+                                    <p>Birthday Party</p>
+                                    <p>Business Events</p>
+                                </li>
+                                <li>
+                                    <p>Graduation Party</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Other Services</h4>
+                            <ul>
+                                <li>
+                                    <p>Event photographers</p>
+                                    <p>Music</p>
+                                </li>
+                                <li>
+                                    <p>Catering</p>
+                                    <p>Event Venues</p>
+                                </li>
+                                <li>
+                                    <p>Entertainment</p>
+                                </li>
+                                <li>
+                                    <p>Make-up Artists</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>help</p>
+                <hr>
+                <p>contact</p>
+                <hr>
+                <p>terms of use</p>
+                <hr>
+                <p>cookies</p>
+                <hr>
+                <p>language</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script>
+        // Sayfalar arasında geçiş yapma fonksiyonu
+        function showPage(pageId) {
+            // Tüm sayfa elemanlarını seç
+            const pages = document.querySelectorAll('.page');
+
+            // Tüm sayfaları gizle
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Seçilen sayfayı görünür yap
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
