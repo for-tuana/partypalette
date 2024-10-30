@@ -29,6 +29,7 @@
         <button onclick="showPage('page4')">Page 4</button>
         <button onclick="showPage('page5')">Page 5</button>
         <button onclick="showPage('page6')">Page 6</button>
+        <button onclick="showPage('page7')">Page 7</button>
     </div>
 
     <div id="page1" class="page active">
@@ -1116,6 +1117,116 @@
                 </ul>
             </div>
         </footer>
+    </div>
+
+    <div id="page7" class="page">
+        <header>
+            <a href="./index.html">
+                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                PartyPalette</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">log in</a>
+                    </li>
+                    <li>
+                        <a href="#">sign up</a>
+                    </li>
+                    <li>
+                        <a href="#">assistant</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div>
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <p>Business and Contact Address</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Mobile or Telephone Number</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p>Chargeable Credit Card</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div>
+                    <p>Card Number</p>
+                    <p>Name On the Card</p>
+                    <p>Expiration Date</p>
+                    <p>CVC</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <form>
+                                <label for="card1"></label><br>
+                            
+                                <input type="text" id="card1" name="card1" maxlength="4" size="4" pattern="\d{4}" required>
+                                <input type="text" id="card2" name="card2" maxlength="4" size="4" pattern="\d{4}" required>
+                                <input type="text" id="card3" name="card3" maxlength="4" size="4" pattern="\d{4}" required>
+                                <input type="text" id="card4" name="card4" maxlength="4" size="4" pattern="\d{4}" required>
+
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <label for="name-on-the-card"></label>
+                                <input type="text" id="name-on-the-card" name="name-on-the-card">
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <label for="expiry-month"></label>
+                                <select id="expiry-month" name="expiry-month" required>
+                                    <option value="" disabled selected>Month</option>
+                                    <option value="01">01 - January</option>
+                                    <option value="02">02 - February</option>
+                                    <option value="03">03 - March</option>
+                                    <option value="04">04 - April</option>
+                                    <option value="05">05 - May</option>
+                                    <option value="06">06 - June</option>
+                                    <option value="07">07 - July</option>
+                                    <option value="08">08 - August</option>
+                                    <option value="09">09 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                </select>
+                            
+                                <label for="expiry-year"></label>
+                                <select id="expiry-year" name="expiry-year" required>
+                                    <option value="" disabled selected>Year</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <label for="cvc"></label>
+                                <input type="number" id="cvc" name="cvc">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="submit">next</button>
+        </section>
+        <footer></footer>
     </div>
 
     <script>
