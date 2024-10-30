@@ -972,15 +972,14 @@
         <section>
             <h3>ORDER FORM</h3>
             <hr>
+            <form>
             <ul>
                 <li>
-                    <form>
                         <label for="name">Name*</label><br>
                         <input type="text" id="name" name="name" required><br><br>
 
                         <label for="surname">Surname*</label><br>
                         <input type="text" id="surname" name="surname" required><br><br>
-                    </form>
                 </li>
                 <li>
                     <label for="email">E-mail*</label><br>
@@ -1003,43 +1002,29 @@
                 <li>
                     <label for="fileUpload">Music Playlist</label><br>
                     <input type="file" id="fileUpload" name="fileUpload" accept=".txt"><br><br>
-
-                    <details>
-                        <summary></summary>
                     
-                        <form>
-                            <p>Choose...</p>
-                    
-                            <input type="radio" id="option1" name="options" value="option1">
-                            <label for="option1">Flavor Haven</label><br>
-                    
-                            <input type="radio" id="option2" name="options" value="option2">
-                            <label for="option2">Taste Trails</label><br>
-                    
-                        </form>
-                    </details>
+                        <label for="menu-options">Food Menu</label>
+                        <select id="menu-options" name="menu-options" required>
+                            <option value="" disabled selected>Choose...</option>
+                            <option value="flavor-haven">Flavor Haven</option>
+                            <option value="taste-trails">Taste Trails</option>
+                        </select>
                 </li>
             </ul>
-            <form>
-                <details>
-                    <summary></summary>
-                
-                    <form>
-                        <p>Choose...</p>
-                
-                        <input type="radio" id="option1" name="options" value="option1">
-                        <label for="option1">Balloons</label><br>
-                
-                        <input type="radio" id="option2" name="options" value="option2">
-                        <label for="option2">Flowers</label><br>
+            </form>
 
-                    </form>
-                </details>
-        
-                <label for="your-notes">Your Notes</label><br>
-                <input type="text" id="your-notes" name="your-notes" required placeholder="Write here..."><br><br>
-    
-                <button type="submit">Send</button>
+            <form>
+                    <label for="decoration-options">Extras</label>
+                    <select id="decoration-options" name="decoration-options" required>
+                        <option value="" disabled selected>Choose...</option>
+                        <option value="balloons">Balloons</option>
+                        <option value="flowers">Flowers</option>
+                    </select><br><br>
+
+                    <label for="your-notes">Your Notes</label><br>
+                    <input type="text" id="your-notes" name="your-notes" required placeholder="Write here..."><br><br>
+
+                    <button type="submit">Send</button>
             </form>
         </section>
         <footer>
