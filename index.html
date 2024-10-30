@@ -28,6 +28,7 @@
         <button onclick="showPage('page3')">Page 3</button>
         <button onclick="showPage('page4')">Page 4</button>
         <button onclick="showPage('page5')">Page 5</button>
+        <button onclick="showPage('page6')">Page 6</button>
     </div>
 
     <div id="page1" class="page active">
@@ -869,6 +870,175 @@
                 </ul>
 
                 <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <ul>
+                    <li>
+                        <h4>Event Planning Services</h4>
+                        <ul>
+                            <li>
+                                <p>Wedding</p>
+                                <p>Baby Shower</p>
+                            </li>
+                            <li>
+                                <p>Bachelor's/Bachelorettes's Party</p>
+                                <p>Gender Reveal Party</p>
+                            </li>
+                            <li>
+                                <p>Birthday Party</p>
+                                <p>Business Events</p>
+                            </li>
+                            <li>
+                                <p>Graduation Party</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Other Services</h4>
+                        <ul>
+                            <li>
+                                <p>Event photographers</p>
+                                <p>Music</p>
+                            </li>
+                            <li>
+                                <p>Catering</p>
+                                <p>Event Venues</p>
+                            </li>
+                            <li>
+                                <p>Entertainment</p>
+                            </li>
+                            <li>
+                                <p>Make-up Artists</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>help</p>
+                <hr>
+                <p>contact</p>
+                <hr>
+                <p>terms of use</p>
+                <hr>
+                <p>cookies</p>
+                <hr>
+                <p>language</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div id="page6" class="page">
+        <header>
+            <a href="./index.html">
+                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                PartyPalette</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">log in</a>
+                    </li>
+                    <li>
+                        <a href="#">sign up</a>
+                    </li>
+                    <li>
+                        <a href="#">assistant</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h3>ORDER FORM</h3>
+            <hr>
+            <ul>
+                <li>
+                    <form>
+                        <label for="name">Name*</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="surname">Surname*</label><br>
+                        <input type="text" id="surname" name="surname" required><br><br>
+                    </form>
+                </li>
+                <li>
+                    <label for="email">E-mail*</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone-number">Phone Number*</label><br>
+                    <input type="number" id="phone-number" name="phone-number" required><br><br>
+                </li>
+                <li>
+                    <label for="address">Address*</label><br>
+                    <input type="txt" id="address" name="address" required><br><br>
+                </li>
+                <li>
+                    <label for="date">Date*</label><br>
+                    <input type="date" id="date" name="date" required value="20241030"><br><br>
+
+                    <label for="guests">Number of Guests*</label><br>
+                    <input type="number" id="guests" name="guests" required><br><br>
+                </li>
+                <li>
+                    <label for="fileUpload">Music Playlist</label><br>
+                    <input type="file" id="fileUpload" name="fileUpload" accept=".txt"><br><br>
+
+                    <details>
+                        <summary></summary>
+                    
+                        <form>
+                            <p>Choose...</p>
+                    
+                            <input type="radio" id="option1" name="options" value="option1">
+                            <label for="option1">Flavor Haven</label><br>
+                    
+                            <input type="radio" id="option2" name="options" value="option2">
+                            <label for="option2">Taste Trails</label><br>
+                    
+                        </form>
+                    </details>
+                </li>
+            </ul>
+            <form>
+                <details>
+                    <summary></summary>
+                
+                    <form>
+                        <p>Choose...</p>
+                
+                        <input type="radio" id="option1" name="options" value="option1">
+                        <label for="option1">Balloons</label><br>
+                
+                        <input type="radio" id="option2" name="options" value="option2">
+                        <label for="option2">Flowers</label><br>
+
+                    </form>
+                </details>
+        
+                <label for="your-notes">Your Notes</label><br>
+                <input type="text" id="your-notes" name="your-notes" required placeholder="Write here..."><br><br>
+    
+                <button type="submit">Send</button>
             </form>
         </section>
         <footer>
