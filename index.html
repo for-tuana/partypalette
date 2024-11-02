@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class="navigation">
-        <button onclick="showPage('page1')">Page 1</button>
+        <button onclick="showPage('main-page')">Main Page</button>
         <button onclick="showPage('page2')">Page 2</button>
         <button onclick="showPage('page3')">Page 3</button>
         <button onclick="showPage('page4')">Page 4</button>
@@ -39,46 +39,38 @@
         <button onclick="showPage('page14')">Page 14</button>
     </div>
 
-    <div id="page1" class="page active">
+    <div id="main-page" class="page active">
     <header>
         <a href="./index.html">
-            <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65">
             PartyPalette</a>
         <nav>
             <ul>
                 <li>
-                    <a href="#">log in</a>
+                    <a href="#login">log in</a>
                 </li>
                 <li>
-                    <a href="#">sign up</a>
+                    <a href="#signup">sign up</a>
                 </li>
                 <li>
-                    <a href="#">list your business</a>
+                    <a href="#list-business">list your business</a>
                 </li>
                 <li>
-                    <a href="#">assistant</a>
+                    <a href="#assistant">assistant</a>
                 </li>
             </ul>
         </nav>
         <h1>find party suppliers and anything you need for the best party in your life!</h1>
         <div>
-            <ul>
-                <li>
-                    <img src="./images/Search.jpg" alt="Image of Search">
-                    <form action="/search" method="GET">
-                        <input type="text" name="query" placeholder="what are you looking for" required>
-                    </form>
-                </li>
-                <li>
-                    <img src="./images/Location.jpg" alt="Image of Location">
-                    <form action="/search" method="GET">
-                        <input type="text" name="query" placeholder="where?" required>
-                    </form>
-                </li>
-                <li>
-                    <button type="button">search</button>
-                </li>
-            </ul>
+            <form action="./search" method="get">
+                <img src="./images/Search.jpg" alt="Image of Search">
+                <input type="text" name="query" placeholder="what are you looking for" required>
+
+                <img src="./images/Location.jpg" alt="Image of Location">
+                <input type="text" name="query" placeholder="where?" required>
+
+                <button type="button">search</button>
+            </form>
         </div>
     </header>
 
