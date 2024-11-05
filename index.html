@@ -29,9 +29,9 @@
         <button onclick="showPage('login-page')">Log In Page</button>
         <button onclick="showPage('signup-page')">Sign Up Page</button>
         <button onclick="showPage('order-form-page')">Order Form Page</button>
-        <button onclick="showPage('page7')">Page 7</button>
-        <button onclick="showPage('page8')">Page 8</button>
-        <button onclick="showPage('page9')">Page 9</button>
+        <button onclick="showPage('payment-page')">Payment Page</button>
+        <button onclick="showPage('order-requested-page')">Order Requested Page</button>
+        <button onclick="showPage('search-business-page')">Search Business Page</button>
         <button onclick="showPage('page10')">Page 10</button>
         <button onclick="showPage('page11')">Page 11</button>
         <button onclick="showPage('page12')">Page 12</button>
@@ -1291,27 +1291,26 @@
         </footer>
     </div>
 
-    <div id="page9" class="page">
+    <div id="search-business-page" class="page">
         <header>
-            <ul>
-                <li>
-                    <a href="./index.html">
-                        <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                        PartyPalette</a>
-                    
+            <nav>
+                <a href="./index.html">
+                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                    PartyPalette</a>
+
                     <form action="/search" method="GET">
                         <input type="text" name="query" placeholder="Search" required>
                     </form>
-                </li>
-            </ul>
-            
-            <nav>
+
                 <ul>
                     <li>
-                        <a href="#">log in</a>
+                        <a href="#login">log in</a>
                     </li>
                     <li>
-                        <a href="#">sign up</a>
+                        <a href="#signup">sign up</a>
+                    </li>
+                    <li>
+                        <a href="#list-your-business">list your business</a>
                     </li>
                     <li>
                         <a href="#">assistant</a>
@@ -1406,48 +1405,46 @@
             </div>
 
             <div>
-                <ul>
-                    <li>
-                        <h4>Event Planning Services</h4>
-                        <ul>
-                            <li>
-                                <p>Wedding</p>
-                                <p>Baby Shower</p>
-                            </li>
-                            <li>
-                                <p>Bachelor's/Bachelorettes's Party</p>
-                                <p>Gender Reveal Party</p>
-                            </li>
-                            <li>
-                                <p>Birthday Party</p>
-                                <p>Business Events</p>
-                            </li>
-                            <li>
-                                <p>Graduation Party</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Other Services</h4>
-                        <ul>
-                            <li>
-                                <p>Event photographers</p>
-                                <p>Music</p>
-                            </li>
-                            <li>
-                                <p>Catering</p>
-                                <p>Event Venues</p>
-                            </li>
-                            <li>
-                                <p>Entertainment</p>
-                            </li>
-                            <li>
-                                <p>Make-up Artists</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>   
+                <div>
+                    <h4>Event Planning Services</h4>
+                    <ul>
+                        <li>
+                            <p>Wedding</p>
+                            <p>Baby Shower</p>
+                        </li>
+                        <li>
+                            <p>Bachelor's/Bachelorettes's Party</p>
+                            <p>Gender Reveal Party</p>
+                        </li>
+                        <li>
+                            <p>Birthday Party</p>
+                            <p>Business Events</p>
+                        </li>
+                        <li>
+                            <p>Graduation Party</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li>
+                            <p>Event photographers</p>
+                            <p>Music</p>
+                        </li>
+                        <li>
+                            <p>Catering</p>
+                            <p>Event Venues</p>
+                        </li>
+                        <li>
+                            <p>Entertainment</p>
+                        </li>
+                        <li>
+                            <p>Make-up Artists</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <footer>
             <div>
