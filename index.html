@@ -26,8 +26,8 @@
         <button onclick="showPage('main-page')">Main Page</button>
         <button onclick="showPage('categories-page')">Categories Page</button>
         <button onclick="showPage('santorini-wedding-page')">Santorini Wedding Page</button>
-        <button onclick="showPage('login-page')">Log in Page</button>
-        <button onclick="showPage('page5')">Page 5</button>
+        <button onclick="showPage('login-page')">Log In Page</button>
+        <button onclick="showPage('signup-page')">Sign Up pAGE</button>
         <button onclick="showPage('page6')">Page 6</button>
         <button onclick="showPage('page7')">Page 7</button>
         <button onclick="showPage('page8')">Page 8</button>
@@ -811,12 +811,12 @@
         </footer>
     </div>
 
-    <div id="page5" class="page">
+    <div id="signup-page" class="page">
         <header>
-            <a href="./index.html">
-                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                PartyPalette</a>
             <nav>
+                <a href="./index.html">
+                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                    PartyPalette</a>
                 <ul>
                     <li>
                         <a href="#">log in</a>
@@ -830,42 +830,43 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <h3>Sign Up</h3>
-            <hr>
-            <form>
-                <label for="firstName"></label><br>
-                <input type="text" id="firstName" name="firstName" required placeholder="First Name"><br><br>
-            
-                <label for="lastName"></label><br>
-                <input type="text" id="lastName" name="lastName" required placeholder="Last name"><br><br>
-            
-                <label for="email"></label><br>
-                <input type="email" id="email" name="email" required placeholder="E-mail Address"><br><br>
-            
-                <label for="phone"></label><br>
-                <input type="tel" id="phone" name="phone" required placeholder="Phone Number"><br><br>
-            
-                <label for="dob"></label><br>
-                <input type="date" id="dob" name="dob" required placeholder="Date of Birth"><br><br>
-            
-                <label for="password"></label><br>
-                <input type="password" id="password" name="password" required placeholder="Password"><br><br>
-            
-                <label for="passwordAgain"></label><br>
-                <input type="password" id="passwordAgain" name="passwordAgain" required placeholder="Password Again"><br><br>
+        <section id="signup">
+            <div>
+                <h3>Sign Up</h3>
+                <hr>
+                <form>
+                    <label for="firstName"></label><br>
+                    <input type="text" id="firstName" name="firstName" required placeholder="First Name"><br><br>
+                
+                    <label for="lastName"></label><br>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Last name"><br><br>
+                
+                    <label for="email"></label><br>
+                    <input type="email" id="email" name="email" required placeholder="E-mail Address"><br><br>
+                
+                    <label for="phone"></label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="Phone Number"><br><br>
+                
+                    <label for="dob"></label><br>
+                    <input type="date" id="dob" name="dob" required placeholder="Date of Birth"><br><br>
+                
+                    <label for="password"></label><br>
+                    <input type="password" id="password" name="password" required placeholder="Password"><br><br>
+                
+                    <label for="passwordAgain"></label><br>
+                    <input type="password" id="passwordAgain" name="passwordAgain" required placeholder="Password Again"><br><br>
+                
+                    <ul>
+                        <li>
+                            <p>Already a member?</p>
+                            <a href="/">Log in</a>
+                        </li>
+                    </ul>
+                
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
 
-                <ul>
-                    <li>
-                        <p>Already a member?</p>
-                        <a href="/">Log in</a>
-                    </li>
-                </ul>
-
-                <button type="submit">Sign Up</button>
-            </form>
-        </section>
-        <footer>
             <div>
                 <ul>
                     <li>
@@ -909,6 +910,8 @@
                     </li>
                 </ul>
             </div>
+        </section>
+        <footer>
             <div>
                 <p>help</p>
                 <hr>
