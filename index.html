@@ -24,7 +24,7 @@
 <body>
     <div class="navigation">
         <button onclick="showPage('main-page')">Main Page</button>
-        <button onclick="showPage('page2')">Page 2</button>
+        <button onclick="showPage('categories-page')">Categories Page</button>
         <button onclick="showPage('page3')">Page 3</button>
         <button onclick="showPage('page4')">Page 4</button>
         <button onclick="showPage('page5')">Page 5</button>
@@ -40,11 +40,11 @@
     </div>
 
     <div id="main-page" class="page active">
-    <header id="main-page-header">
-        <a href="./index.html">
-            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65">
-            PartyPalette</a>
+    <header>
         <nav>
+            <a href="./index.html">
+                <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65">
+                PartyPalette</a>
             <ul>
                 <li>
                     <a href="#login">log in</a>
@@ -169,63 +169,66 @@
     </footer>
     </div>
 
-    <div id="page2" class="page">
+    <div id="categories-page" class="page">
         <header>
-            <a href="./index.html">
-                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                PartyPalette</a>
             <nav>
+                <a href="./index.html">
+                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                    PartyPalette</a>
                 <ul>
                     <li>
-                        <a href="#">log in</a>
+                        <a href="#login">log in</a>
                     </li>
                     <li>
-                        <a href="#">sign up</a>
+                        <a href="#signup">sign up</a>
                     </li>
                     <li>
-                        <a href="#">assistant</a>
+                        <a href="#assistant">assistant</a>
                     </li>
                 </ul>
             </nav>
         </header>
-
         <div>
-            <section>
-                <h1>Wedding</h1>
-                <p>You are getting married. Have you thought about planning this great day with the best planners in your city? A wedding
-                planner ensures that your wedding goes smoothly so that you and your friends and family can fully enjoy the big day.</p>
-            </section>
-
             <div>
-                <div>
+                <section id="wedding">
+                    <h1>Wedding</h1>
+                    <p>You are getting married. Have you thought about planning this great day with the best planners in your city? A
+                        wedding
+                        planner ensures that your wedding goes smoothly so that you and your friends and family can fully enjoy the big day.
+                    </p>
+                </section>
+            </div>
+
+            <div id="wedding-categories">
+                <div id="search">
                     <form action="/search" method="GET">
                         <input type="text" name="query" placeholder="Search" required>
                     </form>
                 </div>
-                <div>
-                    <div>
+                <div id="section-one">
+                    <div id="categories">
                         <ul>
                             <li>
-                                <img src="./images/Santorini.jpg" alt="Image of Santorini Planning">
+                                <img src="./images/Santorini.jpg" alt="Image of Santorini Planning" width="250" height="180">
                                 <h2>Santorini Planning Inc.</h2>
                                 <p>We're a company that specializes in the planning, development and decoration of social and business events; such as
                                 weddings, birthdays, anniversaries, baby showers, conferences...</p>
                             </li>
                             <li>
-                                <img src="./images/Sevilla.jpg" alt="Image of Sevilla Glam Wedding Designs">
+                                <img src="./images/Sevilla.jpg" alt="Image of Sevilla Glam Wedding Designs" width="250" height="180">
                                 <h2>Sevilla Glam Wedding Designs</h2>
                                 <p>We offer both event planning and event support thanks to our knowledge and experience in wedding event planning. We can
                                 give you an idea of what your event will look like...</p>
                             </li>
                             <li>
-                                <img src="./images/Sicily.jpg" alt="Image of Sicily Wedding & Events">
+                                <img src="./images/Sicily.jpg" alt="Image of Sicily Wedding & Events" width="250" height="180">
                                 <h2>Sicily Weddings & Events</h2>
                                 <p>We are Sicily Weddings&Events, the premium wedding and events management company based in “your city”, comprising of a
                                 team of architects, designers, and well experienced wedding plan...</p>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div id="filters">
                         <h3>Filters</h3>
                         <hr>
                         <p>Sort On</p>
@@ -240,40 +243,40 @@
                         <button type="button">Max</button>
                         <hr>
                         <p>Reviews</p>
-                        <ul>
+                        <ul id="reviews">
                             <li>
                                 <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
                             </li>
                             <li>
                                 <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
                             </li>
                             <li>
                                 <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
                             </li>
                             <li>
                                 <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
                             </li>
                             <li>
                                 <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
+                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div id="pagination">
                         <button type="button">Previous</button>
                         <button type="button">1</button>
                         <button type="button">2</button>
@@ -284,7 +287,7 @@
                         <button type="button">Next</button>
                     </div>
                 </div>
-                <div>
+                <div id="footer-navbar">
                     <ul>
                         <li>
                             <h4>Event Planning Services</h4>
