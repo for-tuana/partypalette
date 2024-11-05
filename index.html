@@ -26,7 +26,7 @@
         <button onclick="showPage('main-page')">Main Page</button>
         <button onclick="showPage('categories-page')">Categories Page</button>
         <button onclick="showPage('santorini-wedding-page')">Santorini Wedding Page</button>
-        <button onclick="showPage('page4')">Page 4</button>
+        <button onclick="showPage('login-page')">Log in Page</button>
         <button onclick="showPage('page5')">Page 5</button>
         <button onclick="showPage('page6')">Page 6</button>
         <button onclick="showPage('page7')">Page 7</button>
@@ -689,26 +689,26 @@
         </footer>
     </div>
     
-    <div id="page4" class="page">
+    <div id="login-page" class="page">
         <header>
-            <a href="./index.html">
-                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                PartyPalette</a>
             <nav>
+                <a href="./index.html">
+                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
+                    PartyPalette</a>
                 <ul>
                     <li>
-                        <a href="#">log in</a>
+                        <a href="#login">log in</a>
                     </li>
                     <li>
-                        <a href="#">sign up</a>
+                        <a href="#signup">sign up</a>
                     </li>
                     <li>
-                        <a href="#">assistant</a>
+                        <a href="#assistant">assistant</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <section>
+        <section id="login">
             <h3>Log in</h3>
             <hr>
             <form action="javascript:void(0);">
@@ -717,18 +717,18 @@
             
                 <label for="password"></label><br>
                 <input type="password" id="password" name="password" required placeholder="Password"><br><br>
-                <a href="/">Forgot Password?</a>
+                <a href="index.html/">Forgot Password?</a>
                 <br>
                 <button type="submit">Log In</button>
             </form>
             <span>or</span>
             <br>
             <button type="button">
-                <img src="./images/facebook-icon.jpg" alt="Image of facebook icon" width="20">
+                <img src="./images/facebook-icon.jpg" alt="Image of facebook icon" width="25">
                 Continue with Facebook
             </button>
             <button type="button">
-                <img src="./images/google-icon.jpg" alt="Image of google icon" width="20">
+                <img src="./images/google-icon.jpg" alt="Image of google icon" width="25">
                 Continue with Google
             </button>
             <p><bold>Dont have an account?</bold></p>
