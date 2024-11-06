@@ -1,2483 +1,2567 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PartyPalette</title>
-    <style>
-        /* Varsayılan olarak tüm sayfalar gizli */
-        .page {
-            display: none;
-        }
-    
-        /* Aktif sayfa görünür */
-        .active {
-            display: block;
-        }
-    
-        /* Buton düzenlemesi */
-        .navigation button {
-            margin: 5px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartyPalette</title>
+  <style>
+    /* Varsayılan olarak tüm sayfalar gizli */
+    .page {
+      display: none;
+    }
+
+    /* Aktif sayfa görünür */
+    .active {
+      display: block;
+    }
+
+    /* Buton düzenlemesi */
+    .navigation button {
+      margin: 5px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="navigation">
-        <button onclick="showPage('main-page')">Main Page</button>
-        <button onclick="showPage('categories-page')">Categories Page</button>
-        <button onclick="showPage('santorini-wedding-page')">Santorini Wedding Page</button>
-        <button onclick="showPage('login-page')">Log In Page</button>
-        <button onclick="showPage('signup-page')">Sign Up Page</button>
-        <button onclick="showPage('order-form-page')">Order Form Page</button>
-        <button onclick="showPage('payment-page')">Payment Page</button>
-        <button onclick="showPage('order-requested-page')">Order Requested Page</button>
-        <button onclick="showPage('search-business-page')">Search Business Page</button>
-        <button onclick="showPage('other-services-page')">Other Services Page</button>
-        <button onclick="showPage('page11')">Page 11</button>
-        <button onclick="showPage('page12')">Page 12</button>
-        <button onclick="showPage('page13')">Page 13</button>
-        <button onclick="showPage('page14')">Page 14</button>
-    </div>
+  <div class="navigation">
+    <button onclick="showPage('main-page')">Main Page</button>
+    <button onclick="showPage('categories-page')">Categories Page</button>
+    <button onclick="showPage('santorini-wedding-page')">
+      Santorini Wedding Page
+    </button>
+    <button onclick="showPage('login-page')">Log In Page</button>
+    <button onclick="showPage('signup-page')">Sign Up Page</button>
+    <button onclick="showPage('order-form-page')">Order Form Page</button>
+    <button onclick="showPage('payment-page')">Payment Page</button>
+    <button onclick="showPage('order-requested-page')">
+      Order Requested Page
+    </button>
+    <button onclick="showPage('search-business-page')">
+      Search Business Page
+    </button>
+    <button onclick="showPage('other-services-page')">
+      Other Services Page
+    </button>
+    <button onclick="showPage('list-business-page')">
+      List Business Page
+    </button>
+    <button onclick="showPage('create-business-page')">
+      Create Business Page
+    </button>
+    <button onclick="showPage('page13')">Page 13</button>
+    <button onclick="showPage('page14')">Page 14</button>
+  </div>
 
-    <div id="main-page" class="page active">
+  <div id="main-page" class="page active">
     <header>
-        <nav>
-            <a href="./index.html">
-                <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65">
-                PartyPalette</a>
-            <ul>
-                <li>
-                    <a href="#login">log in</a>
-                </li>
-                <li>
-                    <a href="#signup">sign up</a>
-                </li>
-                <li>
-                    <a href="#list-business">list your business</a>
-                </li>
-                <li>
-                    <a href="#assistant">assistant</a>
-                </li>
-            </ul>
-        </nav>
-        <p>find party suppliers and anything you need for the best party in your life!</p>
-        <div>
-            <form action="./search" method="get">
-                <img src="./images/Search.jpg" alt="Image of Search">
-                <input type="text" name="query" placeholder="what are you looking for" required>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#login">log in</a>
+          </li>
+          <li>
+            <a href="#signup">sign up</a>
+          </li>
+          <li>
+            <a href="#list-business">list your business</a>
+          </li>
+          <li>
+            <a href="#assistant">assistant</a>
+          </li>
+        </ul>
+      </nav>
+      <p>
+        find party suppliers and anything you need for the best party in your
+        life!
+      </p>
+      <div>
+        <form action="./search" method="get">
+          <img src="./images/Search.jpg" alt="Image of Search" />
+          <input type="text" name="query" placeholder="what are you looking for" required />
 
-                <img src="./images/Location.jpg" alt="Image of Location">
-                <input type="text" name="query" placeholder="where?" required>
+          <img src="./images/Location.jpg" alt="Image of Location" />
+          <input type="text" name="query" placeholder="where?" required />
 
-                <button type="button">search</button>
-            </form>
-        </div>
+          <button type="button">search</button>
+        </form>
+      </div>
     </header>
 
     <section id="Categories">
-        <h1>All Categories</h1>
+      <h1>All Categories</h1>
+      <div>
+        <ul>
+          <li>
+            <img src="./images/Wedding.jpg" alt="Image of Wedding" width="360" height="230" />
+            <h2>Wedding</h2>
+          </li>
+          <li>
+            <img src="./images/Birthday-Party.jpg" alt="Image of Birthday Party" width="360" height="230" />
+            <h2>Birthday Party</h2>
+          </li>
+          <li>
+            <img src="./images/Graduation-Party.jpg" alt="Image of Graduation Party" width="360" height="230" />
+            <h2>Graduation Party</h2>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="./images/Business-Event.jpg" alt="Image of Business Events" width="360" height="230" />
+            <h2>Business Events</h2>
+          </li>
+          <li>
+            <img src="./images/Baby-Shower.jpg" alt="Image of Baby Shower" width="360" height="230" />
+            <h2>Baby Shower</h2>
+          </li>
+          <li>
+            <img src="./images/Bachelor'sBachelorettes's-Party.jpg" alt="Image of Bachelor's/Bachelorettes's Party"
+              width="360" height="230" />
+            <h2>Bachelor's/Bachelorettes's Party</h2>
+          </li>
+        </ul>
+      </div>
+      <div>
         <div>
-            <ul>
-                <li>
-                    <img src="./images/Wedding.jpg" alt="Image of Wedding" width=360 height="230">
-                    <h2>Wedding</h2>
-                </li>
-                <li>
-                    <img src="./images/Birthday-Party.jpg" alt="Image of Birthday Party" width=360 height="230">
-                    <h2>Birthday Party</h2>
-                </li>
-                <li>
-                    <img src="./images/Graduation-Party.jpg" alt="Image of Graduation Party" width=360 height="230">
-                    <h2>Graduation Party</h2>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="./images/Business-Event.jpg" alt="Image of Business Events" width=360 height="230">
-                    <h2>Business Events</h2>
-                </li>
-                <li>
-                    <img src="./images/Baby-Shower.jpg" alt="Image of Baby Shower" width=360 height="230">
-                    <h2>Baby Shower</h2>
-                </li>
-                <li>
-                    <img src="./images/Bachelor'sBachelorettes's-Party.jpg" alt="Image of Bachelor's/Bachelorettes's Party" width=360 height="230">
-                    <h2>Bachelor's/Bachelorettes's Party</h2>
-                </li>
-            </ul>
+          <h1>Other services that you can use</h1>
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65" />
+          <button type="button">DISCOVER</button>
         </div>
         <div>
-            <div>
-                <h1>Other services that you can use</h1>
-                <img src="./images/PartyPaletteLogo.jpg" alt="Logo" width="80" height="65">
-                <button type="button">DISCOVER</button>
-            </div>
-            <div>
-                    <ul>
-                        <li><img src="./images/Image(1).jpg" alt="Image of Drum Machine" width="365" height="180"></li>
-                        <li><img src="./images/Image(2).jpg" alt="Image of Wedding" width="365" height="180"></li>
-                    </ul>
-                    <ul>
-                        <li><img src="./images/Image(3).jpg" alt="Image of Buffet" width="365" height="180"></li>
-                        <li><img src="./images/Image(4).jpg" alt="Image of Saloon" width="365" height="180"></li>
-                    </ul>
-            </div>
+          <ul>
+            <li>
+              <img src="./images/Image(1).jpg" alt="Image of Drum Machine" width="365" height="180" />
+            </li>
+            <li>
+              <img src="./images/Image(2).jpg" alt="Image of Wedding" width="365" height="180" />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img src="./images/Image(3).jpg" alt="Image of Buffet" width="365" height="180" />
+            </li>
+            <li>
+              <img src="./images/Image(4).jpg" alt="Image of Saloon" width="365" height="180" />
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <footer id="main-page-footer">
-        <p>READY FOR THE PARTY?</p>
+      <p>READY FOR THE PARTY?</p>
+      <div>
+        <a href="mailto:partypalette@uskudar.tr">
+          <img src="./images/Mail.jpg" alt="Image of Mail" />
+          partypalette@uskudar.tr
+        </a>
+      </div>
+
+      <div>
         <div>
-            <a href="mailto:partypalette@uskudar.tr">
-                <img src="./images/Mail.jpg" alt="Image of Mail">
-                partypalette@uskudar.tr
-            </a>         
+          <ul>
+            <li>
+              <a href="./index.html">
+                <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="./index.html">Terms & Conditions</a>
-                    </li>
-                </ul>
-            </div>
+          <ul>
+            <li>
+              <a href="./index.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="./index.html">Terms & Conditions</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
-    </div>
+  </div>
 
-    <div id="categories-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#login">log in</a>
-                    </li>
-                    <li>
-                        <a href="#signup">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#assistant">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <div>
-                <section id="wedding">
-                    <h1>Wedding</h1>
-                    <p>You are getting married. Have you thought about planning this great day with the best planners in your city? A
-                        wedding
-                        planner ensures that your wedding goes smoothly so that you and your friends and family can fully enjoy the big day.
-                    </p>
-                </section>
-            </div>
+  <div id="categories-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#login">log in</a>
+          </li>
+          <li>
+            <a href="#signup">sign up</a>
+          </li>
+          <li>
+            <a href="#assistant">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <div>
+        <section id="wedding">
+          <h1>Wedding</h1>
+          <p>
+            You are getting married. Have you thought about planning this
+            great day with the best planners in your city? A wedding planner
+            ensures that your wedding goes smoothly so that you and your
+            friends and family can fully enjoy the big day.
+          </p>
+        </section>
+      </div>
 
-            <div id="wedding-categories">
-                <div id="search">
-                    <form action="/search" method="GET">
-                        <input type="text" name="query" placeholder="Search" required>
-                    </form>
-                </div>
-                <div id="section-one">
-                    <div id="categories">
-                        <ul>
-                            <li>
-                                <img src="./images/Santorini.jpg" alt="Image of Santorini Planning" width="250" height="180">
-                                <h2>Santorini Planning Inc.</h2>
-                                <p>We're a company that specializes in the planning, development and decoration of social and business events; such as
-                                weddings, birthdays, anniversaries, baby showers, conferences...</p>
-                            </li>
-                            <li>
-                                <img src="./images/Sevilla.jpg" alt="Image of Sevilla Glam Wedding Designs" width="250" height="180">
-                                <h2>Sevilla Glam Wedding Designs</h2>
-                                <p>We offer both event planning and event support thanks to our knowledge and experience in wedding event planning. We can
-                                give you an idea of what your event will look like...</p>
-                            </li>
-                            <li>
-                                <img src="./images/Sicily.jpg" alt="Image of Sicily Wedding & Events" width="250" height="180">
-                                <h2>Sicily Weddings & Events</h2>
-                                <p>We are Sicily Weddings&Events, the premium wedding and events management company based in “your city”, comprising of a
-                                team of architects, designers, and well experienced wedding plan...</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="filters">
-                        <h3>Filters</h3>
-                        <hr>
-                        <p>Sort On</p>
-                        <button type="button">standard</button>
-                        <hr>
-                        <p>Region</p>
-                        <button type="button">Enter city,state,country...</button>
-                        <hr>
-                        <p>Budget</p>
-                        <button type="button">Min</button>
-                        <hr>
-                        <button type="button">Max</button>
-                        <hr>
-                        <p>Reviews</p>
-                        <ul id="reviews">
-                            <li>
-                                <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                            </li>
-                            <li>
-                                <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                            </li>
-                            <li>
-                                <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                            </li>
-                            <li>
-                                <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                            </li>
-                            <li>
-                                <input type="checkbox">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24">
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="pagination">
-                        <button type="button">Previous</button>
-                        <button type="button">1</button>
-                        <button type="button">2</button>
-                        <button type="button">3</button>
-                        <button type="button">4</button>
-                        <p>...</p>
-                        <button type="button">9</button>
-                        <button type="button">Next</button>
-                    </div>
-                </div>
-                <div id="footer-navbar">
-                    <ul>
-                        <li>
-                            <h4>Event Planning Services</h4>
-                            <ul>
-                                <li>
-                                    <p>Wedding</p>
-                                    <p>Baby Shower</p>
-                                </li>
-                                <li>
-                                    <p>Bachelor's/Bachelorettes's Party</p>
-                                    <p>Gender Reveal Party</p>
-                                </li>
-                                <li>
-                                    <p>Birthday Party</p>
-                                    <p>Business Events</p>
-                                </li>
-                                <li>
-                                    <p>Graduation Party</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h4>Other Services</h4>
-                            <ul>
-                                <li>
-                                    <p>Event photographers</p>
-                                    <p>Music</p>
-                                </li>
-                                <li>
-                                    <p>Catering</p>
-                                    <p>Event Venues</p>
-                                </li>
-                                <li>
-                                    <p>Entertainment</p>
-                                </li>
-                                <li>
-                                    <p>Make-up Artists</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h4>Event Planning Services</h4>
-                    <ul>
-                        <li>
-                            <p>Wedding</p>
-                            <p>Baby Shower</p>
-                        </li>
-                        <li>
-                            <p>Bachelor's/Bachelorettes's Party</p>
-                            <p>Gender Reveal Party</p>
-                        </li>
-                        <li>
-                            <p>Birthday Party</p>
-                            <p>Business Events</p>
-                        </li>
-                        <li>
-                            <p>Graduation Party</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li>
-                            <p>Event photographers</p>
-                            <p>Music</p>
-                        </li>
-                        <li>
-                            <p>Catering</p>
-                            <p>Event Venues</p>
-                        </li>
-                        <li>
-                            <p>Entertainment</p>
-                        </li>
-                        <li>
-                            <p>Make-up Artists</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div id="wedding-categories">
+        <div id="search">
+          <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search" required />
+          </form>
         </div>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-    <div id="santorini-wedding-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#login">log in</a>
-                    </li>
-                    <li>
-                        <a href="#signup">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#assistant">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <div id="wedding-photographs">
-                <div>
-                    <img src="./images/Santorini(1).jpg" alt="Image of Santorini Wedding One" width="670" height="325">
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <img src="./images/Santorini(2).jpg" alt="Image of Santorini Wedding Two" width="128" height="100">
-                            <img src="./images/Santorini(3).jpg" alt="Image of Santorini Wedding Three" width="128" height="100">
-                        </li>
-                        <li>
-                            <img src="./images/Santorini(4).jpg" alt="Image of Santorini Wedding Two" width="128" height="100">
-                            <img src="./images/Santorini(5).jpg" alt="Image of Santorini Wedding Five" width="128" height="100">
-                        </li>
-                        <li>
-                            <img src="./images/Santorini(6).jpg" alt="Image of Santorini Wedding Six" width="128" height="100">
-                            <img src="./images/More.jpg" alt="Image of more image" width="128" height="100">
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./images/pagination.jpg" alt="Image of pagination">
-                </div>
-            </div>
-
-            <section id="santorini-planning">
+        <div id="section-one">
+          <div id="categories">
+            <ul>
+              <li>
+                <img src="./images/Santorini.jpg" alt="Image of Santorini Planning" width="250" height="180" />
                 <h2>Santorini Planning Inc.</h2>
-                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24">
-                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24">
-                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24">
-                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24">
-                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24">
-                <p>5.0 party points - 20 reviews</p>
-            </section>
-
-            <div id="contact-form">
-                <div>
-                    <p>BEAUTIFUL MOMENTS of romance, love and dreams<br> 
-                    By SANTORINI PLANNING INC.<br>
-                    Finding beauty. That's what we do. We plan for the greatest day of your life, tending to every exquisite detail down to
-                    the last candle, ribbon and rose petal. Weddings Santorini offers breathtaking wedding venues, impeccable planning
-                    services and a plethora of wedding day extras; your every wish is our command. Professional excellence with a friendly
-                    smile, lavish and unforgettable events. What could be better?</p>
-                </div>
-                <section id="contact form">
-                    <h2>Contact Form</h2>
-                    <form>
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Name-Surname"><br><br>
-                    
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
-                    
-                        <label for="phonenumber"></label>
-                        <input type="number" id="phonenumber" name="phonenumber" placeholder="Phone number"><br><br>
-                    
-                        <label for="eventdate"></label>
-                        <input type="date" id="eventdate" name="eventdate" value="2024-10-29"><br><br>
-
-                        <label for="participants"></label>
-                        <input type="number" id="participants" name="participants" placeholder="Participants"><br><br>
-
-                        <label for="askabout"></label>
-                        <input type="text" id="askabout" name="askabout" placeholder="Ask about the price,menu,capacity etc."><br><br>
-
-                        <button type="submit">Get Quote</button>
-                        <p>**You will contact Santorini Planning Inc.</p>
-                    </form>
-                </section>
-            </div>
-
-            <section id="offers">
-                <h2>Plan Offers</h2>
-                <div>
-                    <ul>
-                        <li>
-                            <h3>Outside Wedding Plan</h3>
-                            <ul>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Min. 50, max. 200 people</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Cliffside verande overlooking the sunset for the ceremony</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Flowers and decoration</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Tiffany style platinum or white chairs set up</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Wedding table with white linen</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>DJ, music & sound system</p>
-                                    <p><sub>(allowed until 00:30 am)</sub></p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Food, beverages & wedding cake<sub>(contact us for the menu)</sub></p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Fireworks<sub>(allowed until 22.30 pm)</sub></p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20">
-                                    <p>Photographer to take pictures of you in extraordinary island view</p>
-                                </li>
-                            </ul>
-                            <button type="button">$250 <br> per person</button>
-                        </li>
-                        <li>
-                            <h3>Inside Wedding Plan</h3>
-                            <ul>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Min. 200, max. 800 people</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Spacious wedding hall</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Flowers and decoration</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Tiffany style platinum or white chairs set up</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Wedding table with white linen</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>DJ, music & sound system</p>
-                                    <p><sub>(allowed until 00:30 am)</sub></p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Food, beverages & wedding cake <sub>(contact us for the menu)</sub></p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Photographer</p>
-                                </li>
-                                <li>No kids on the dance floor</li>
-                            </ul>
-                            <button type="button">$200 <br> per person</button>
-                        </li>
-                        <li>
-                            <h3>DELUXE Wedding Plan</h3>
-                            <ul>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Outside or inside, all previous features are included</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>No participant limit</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Live music & band</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>After party<sub>(beverages & dessert)</sub></p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Dancers</p>
-                                </li>
-                                <li>
-                                    <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                                    <p>Animators to entertain kids</p>
-                                </li>
-                            </ul>
-                            <button type="button">$400 <br> per person</button>
-                        </li>
-                    </ul>
-                    <p>***Contact us for add or drop features and get detailed information</p>
-                </div>
-            </section>
-
-            <div id="reviews">
-                <section>
-                    <h3>Reviews</h3>
-                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34">
-                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34">
-                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34">
-                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34">
-                    <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34">
-                    <ul>
-                        <li>
-                            <h3>5.0 Fantastic</h3>
-                            <p>-20 reviews</p>
-                        </li>
-                    </ul>
-                </section>
-                <div>
-                    <ul>
-                        <li>
-                            <h4>Quality of Service</h4>
-                            <h4>Average response time</h4>
-                        </li>
-                        <li>
-                            <h4>Professionalism</h4>
-                            <h4>Value</h4>
-                        </li>
-                        <li>
-                            <h4>Flexibility</h4>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>>
-        <footer>
-            <div>
-                <div>
-                    <h4>Event Planning Services</h4>
-                    <ul>
-                        <li>
-                            <p>Wedding</p>
-                            <p>Baby Shower</p>
-                        </li>
-                        <li>
-                            <p>Bachelor's/Bachelorettes's Party</p>
-                            <p>Gender Reveal Party</p>
-                        </li>
-                        <li>
-                            <p>Birthday Party</p>
-                            <p>Business Events</p>
-                        </li>
-                        <li>
-                            <p>Graduation Party</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li>
-                            <p>Event photographers</p>
-                            <p>Music</p>
-                        </li>
-                        <li>
-                            <p>Catering</p>
-                            <p>Event Venues</p>
-                        </li>
-                        <li>
-                            <p>Entertainment</p>
-                        </li>
-                        <li>
-                            <p>Make-up Artists</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-    
-    <div id="login-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#login">log in</a>
-                    </li>
-                    <li>
-                        <a href="#signup">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#assistant">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section id="login">
-            <h3>Log in</h3>
-            <hr>
-            <form action="javascript:void(0);">
-                <label for="email"></label><br>
-                <input type="email" id="email" name="email" required placeholder="E-mail Address"><br><br>
-            
-                <label for="password"></label><br>
-                <input type="password" id="password" name="password" required placeholder="Password"><br><br>
-                <a href="index.html/">Forgot Password?</a>
-                <br>
-                <button type="submit">Log In</button>
-            </form>
-            <span>or</span>
-            <br>
-            <button type="button">
-                <img src="./images/facebook-icon.jpg" alt="Image of facebook icon" width="25">
-                Continue with Facebook
-            </button>
-            <button type="button">
-                <img src="./images/google-icon.jpg" alt="Image of google icon" width="25">
-                Continue with Google
-            </button>
-            <p><bold>Dont have an account?</bold></p>
-            <button type="submit">Sign Up</button>
-
-            <div>
-                <div>
-                    <h4>Event Planning Services</h4>
-                    <ul>
-                        <li>
-                            <p>Wedding</p>
-                            <p>Baby Shower</p>
-                        </li>
-                        <li>
-                            <p>Bachelor's/Bachelorettes's Party</p>
-                            <p>Gender Reveal Party</p>
-                        </li>
-                        <li>
-                            <p>Birthday Party</p>
-                            <p>Business Events</p>
-                        </li>
-                        <li>
-                            <p>Graduation Party</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li>
-                            <p>Event photographers</p>
-                            <p>Music</p>
-                        </li>
-                        <li>
-                            <p>Catering</p>
-                            <p>Event Venues</p>
-                        </li>
-                        <li>
-                            <p>Entertainment</p>
-                        </li>
-                        <li>
-                            <p>Make-up Artists</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-    <div id="signup-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#">log in</a>
-                    </li>
-                    <li>
-                        <a href="#">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section id="signup">
-            <div>
-                <h3>Sign Up</h3>
-                <hr>
-                <form>
-                    <label for="firstName"></label><br>
-                    <input type="text" id="firstName" name="firstName" required placeholder="First Name"><br><br>
-                
-                    <label for="lastName"></label><br>
-                    <input type="text" id="lastName" name="lastName" required placeholder="Last name"><br><br>
-                
-                    <label for="email"></label><br>
-                    <input type="email" id="email" name="email" required placeholder="E-mail Address"><br><br>
-                
-                    <label for="phone"></label><br>
-                    <input type="tel" id="phone" name="phone" required placeholder="Phone Number"><br><br>
-                
-                    <label for="dob"></label><br>
-                    <input type="date" id="dob" name="dob" required placeholder="Date of Birth"><br><br>
-                
-                    <label for="password"></label><br>
-                    <input type="password" id="password" name="password" required placeholder="Password"><br><br>
-                
-                    <label for="passwordAgain"></label><br>
-                    <input type="password" id="passwordAgain" name="passwordAgain" required placeholder="Password Again"><br><br>
-                
-                    <ul>
-                        <li>
-                            <p>Already a member?</p>
-                            <a href="/">Log in</a>
-                        </li>
-                    </ul>
-                
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-
-            <div>
-                <div>
-                    <h4>Event Planning Services</h4>
-                    <ul>
-                        <li>
-                            <p>Wedding</p>
-                            <p>Baby Shower</p>
-                        </li>
-                        <li>
-                            <p>Bachelor's/Bachelorettes's Party</p>
-                            <p>Gender Reveal Party</p>
-                        </li>
-                        <li>
-                            <p>Birthday Party</p>
-                            <p>Business Events</p>
-                        </li>
-                        <li>
-                            <p>Graduation Party</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li>
-                            <p>Event photographers</p>
-                            <p>Music</p>
-                        </li>
-                        <li>
-                            <p>Catering</p>
-                            <p>Event Venues</p>
-                        </li>
-                        <li>
-                            <p>Entertainment</p>
-                        </li>
-                        <li>
-                            <p>Make-up Artists</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-    <div id="order-form-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#">log in</a>
-                    </li>
-                    <li>
-                        <a href="#">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <section id="order-form">
-                <h3>ORDER FORM</h3>
-                <hr>
-                <form>
-                    <ul>
-                        <li>
-                            <label for="name">Name*</label><br>
-                            <input type="text" id="name" name="name" required><br><br>
-                
-                            <label for="surname">Surname*</label><br>
-                            <input type="text" id="surname" name="surname" required><br><br>
-                        </li>
-                        <li>
-                            <label for="email">E-mail*</label><br>
-                            <input type="email" id="email" name="email" required><br><br>
-                
-                            <label for="phone-number">Phone Number*</label><br>
-                            <input type="number" id="phone-number" name="phone-number" required><br><br>
-                        </li>
-                        <li>
-                            <label for="address">Address*</label><br>
-                            <input type="txt" id="address" name="address" required><br><br>
-                        </li>
-                        <li>
-                            <label for="date">Date*</label><br>
-                            <input type="date" id="date" name="date" required value="20241030"><br><br>
-                
-                            <label for="guests">Number of Guests*</label><br>
-                            <input type="number" id="guests" name="guests" required><br><br>
-                        </li>
-                        <li>
-                            <label for="fileUpload">Music Playlist</label><br>
-                            <input type="file" id="fileUpload" name="fileUpload" accept=".txt"><br><br>
-                
-                            <label for="menu-options">Food Menu</label>
-                            <select id="menu-options" name="menu-options" required>
-                                <option value="" disabled selected>Choose...</option>
-                                <option value="flavor-haven">Flavor Haven</option>
-                                <option value="taste-trails">Taste Trails</option>
-                            </select>
-                        </li>
-                    </ul>
-
-                    <label for="decoration-options">Extras</label>
-                    <select id="decoration-options" name="decoration-options" required>
-                        <option value="" disabled selected>Choose...</option>
-                        <option value="balloons">Balloons</option>
-                        <option value="flowers">Flowers</option>
-                    </select><br><br>
-                    
-                    <label for="your-notes">Your Notes</label><br>
-                    <input type="text" id="your-notes" name="your-notes" required placeholder="Write here..."><br><br>
-                    
-                    <button type="submit">Send</button>
-                </form>
-
-                <div>
-                    <div>
-                        <h4>Event Planning Services</h4>
-                        <ul>
-                            <li>
-                                <p>Wedding</p>
-                                <p>Baby Shower</p>
-                            </li>
-                            <li>
-                                <p>Bachelor's/Bachelorettes's Party</p>
-                                <p>Gender Reveal Party</p>
-                            </li>
-                            <li>
-                                <p>Birthday Party</p>
-                                <p>Business Events</p>
-                            </li>
-                            <li>
-                                <p>Graduation Party</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Other Services</h4>
-                        <ul>
-                            <li>
-                                <p>Event photographers</p>
-                                <p>Music</p>
-                            </li>
-                            <li>
-                                <p>Catering</p>
-                                <p>Event Venues</p>
-                            </li>
-                            <li>
-                                <p>Entertainment</p>
-                            </li>
-                            <li>
-                                <p>Make-up Artists</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                <p>
+                  We're a company that specializes in the planning,
+                  development and decoration of social and business events;
+                  such as weddings, birthdays, anniversaries, baby showers,
+                  conferences...
+                </p>
+              </li>
+              <li>
+                <img src="./images/Sevilla.jpg" alt="Image of Sevilla Glam Wedding Designs" width="250" height="180" />
+                <h2>Sevilla Glam Wedding Designs</h2>
+                <p>
+                  We offer both event planning and event support thanks to our
+                  knowledge and experience in wedding event planning. We can
+                  give you an idea of what your event will look like...
+                </p>
+              </li>
+              <li>
+                <img src="./images/Sicily.jpg" alt="Image of Sicily Wedding & Events" width="250" height="180" />
+                <h2>Sicily Weddings & Events</h2>
+                <p>
+                  We are Sicily Weddings&Events, the premium wedding and
+                  events management company based in “your city”, comprising
+                  of a team of architects, designers, and well experienced
+                  wedding plan...
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div id="filters">
+            <h3>Filters</h3>
+            <hr />
+            <p>Sort On</p>
+            <button type="button">standard</button>
+            <hr />
+            <p>Region</p>
+            <button type="button">Enter city,state,country...</button>
+            <hr />
+            <p>Budget</p>
+            <button type="button">Min</button>
+            <hr />
+            <button type="button">Max</button>
+            <hr />
+            <p>Reviews</p>
+            <ul id="reviews">
+              <li>
+                <input type="checkbox" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+              </li>
+              <li>
+                <input type="checkbox" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+              </li>
+              <li>
+                <input type="checkbox" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+              </li>
+              <li>
+                <input type="checkbox" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+              </li>
+              <li>
+                <input type="checkbox" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+                <img src="./images/confetti.jpg" alt="Image of confetti icon" width="20" height="24" />
+              </li>
+            </ul>
+          </div>
+          <div id="pagination">
+            <button type="button">Previous</button>
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <p>...</p>
+            <button type="button">9</button>
+            <button type="button">Next</button>
+          </div>
         </div>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+        <div id="footer-navbar">
+          <ul>
+            <li>
+              <h4>Event Planning Services</h4>
+              <ul>
+                <li>
+                  <p>Wedding</p>
+                  <p>Baby Shower</p>
+                </li>
+                <li>
+                  <p>Bachelor's/Bachelorettes's Party</p>
+                  <p>Gender Reveal Party</p>
+                </li>
+                <li>
+                  <p>Birthday Party</p>
+                  <p>Business Events</p>
+                </li>
+                <li>
+                  <p>Graduation Party</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>Other Services</h4>
+              <ul>
+                <li>
+                  <p>Event photographers</p>
+                  <p>Music</p>
+                </li>
+                <li>
+                  <p>Catering</p>
+                  <p>Event Venues</p>
+                </li>
+                <li>
+                  <p>Entertainment</p>
+                </li>
+                <li>
+                  <p>Make-up Artists</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <div id="payment-page" class="page">
-        <header>
+      <div>
+        <div>
+          <h4>Event Planning Services</h4>
+          <ul>
+            <li>
+              <p>Wedding</p>
+              <p>Baby Shower</p>
+            </li>
+            <li>
+              <p>Bachelor's/Bachelorettes's Party</p>
+              <p>Gender Reveal Party</p>
+            </li>
+            <li>
+              <p>Birthday Party</p>
+              <p>Business Events</p>
+            </li>
+            <li>
+              <p>Graduation Party</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other Services</h4>
+          <ul>
+            <li>
+              <p>Event photographers</p>
+              <p>Music</p>
+            </li>
+            <li>
+              <p>Catering</p>
+              <p>Event Venues</p>
+            </li>
+            <li>
+              <p>Entertainment</p>
+            </li>
+            <li>
+              <p>Make-up Artists</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
             <a href="./index.html">
-                <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                PartyPalette</a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">log in</a>
-                    </li>
-                    <li>
-                        <a href="#">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <img src="./images/address-icon.jpg" alt="Image of address icon" width="108" height="102">
-                        <p>Business and Contact Address</p>
-                    </li>
-                    <li>
-                        <img src="./images/phone-icon.jpg" alt="Image of phone icon" width="108" height="102">
-                        <p>Mobile or Telephone Number</p>
-                    </li>
-                    <li>
-                        <img src="./images/mastercard-icon.jpg" alt="Image of mastercard icon" width="108" height="102">
-                        <p>Chargeable Credit Card</p>
-                    </li>
-                </ul>
-            </div>
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
-            <div id="payment">
-                <ul>
-                    <li>Card Number</li>
-                    <li>Name On the Card</li>
-                    <li>Expiration Date</li>
-                    <li>CVC</li>
-                </ul>
-
-                <div>
-                    <div>
-                        <form>
-                            <label for="card1"></label><br>
-                        
-                            <input type="text" id="card1" name="card1" maxlength="4" size="4" pattern="\d{4}" required>
-                            <input type="text" id="card2" name="card2" maxlength="4" size="4" pattern="\d{4}" required>
-                            <input type="text" id="card3" name="card3" maxlength="4" size="4" pattern="\d{4}" required>
-                            <input type="text" id="card4" name="card4" maxlength="4" size="4" pattern="\d{4}" required>
-                        
-                        </form>
-                    </div>
-
-                    <div>
-                        <form>
-                            <label for="name-on-the-card"></label>
-                            <input type="text" id="name-on-the-card" name="name-on-the-card">
-                        </form>
-                    </div>
-
-                    <div>
-                        <form>
-                            <label for="expiry-month"></label>
-                            <select id="expiry-month" name="expiry-month" required>
-                                <option value="" disabled selected>Month</option>
-                                <option value="01">01 - January</option>
-                                <option value="02">02 - February</option>
-                                <option value="03">03 - March</option>
-                                <option value="04">04 - April</option>
-                                <option value="05">05 - May</option>
-                                <option value="06">06 - June</option>
-                                <option value="07">07 - July</option>
-                                <option value="08">08 - August</option>
-                                <option value="09">09 - September</option>
-                                <option value="10">10 - October</option>
-                                <option value="11">11 - November</option>
-                                <option value="12">12 - December</option>
-                            </select>
-                        
-                            <label for="expiry-year"></label>
-                            <select id="expiry-year" name="expiry-year" required>
-                                <option value="" disabled selected>Year</option>
-                                <option value="2024">2024</option>
-                                <option value="2025">2025</option>
-                                <option value="2026">2026</option>
-                                <option value="2027">2027</option>
-                                <option value="2028">2028</option>
-                                <option value="2029">2029</option>
-                                <option value="2030">2030</option>
-                            </select>
-                        
-                        </form>
-                    </div>
-
-                    <div>
-                        <form>
-                            <label for="cvc"></label>
-                            <input type="number" id="cvc" name="cvc">
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <button type="submit">next</button>
-            </div>
-        </section>
-        <footer>
-        </footer>
-    </div>
-
-    <div id="order-requested-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#">log in</a>
-                    </li>
-                    <li>
-                        <a href="#">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div id="order-feedback">
-                <div>
-                    <img src="./images/tick-icon.jpg" alt="Image of tick icon">
-                    <p>Thank You!</p>
-                </div>
-                <div>
-                    <p>Your order has been received. Our organizer will contact you as soon as possible. Thank you for choosing
-                        PartyPalette!</p><br>
-                    <p>Order Number: 9999999999</p>
-                </div>
-            </div>
-            <div id="support-team">
-                <img src="./images/Support-team-icon.jpg" alt="Image of support team icon">
-                <p>Support Team</p>
-            </div>
-        </section>
-        <footer>
-        </footer>
-    </div>
-
-    <div id="search-business-page" class="page">
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-
-                    <form action="/search" method="GET">
-                        <input type="text" name="query" placeholder="Search" required>
-                    </form>
-
-                <ul>
-                    <li>
-                        <a href="#login">log in</a>
-                    </li>
-                    <li>
-                        <a href="#signup">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#list-your-business">list your business</a>
-                    </li>
-                    <li>
-                        <a href="#">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <img src="" alt="Image of Business Event Center">
-                        <h3>Business Event Center</h3>
-                        <p>Our Ballroom is absolutely perfect for Corporate Conventions, Virtual Business Conferences, Multi- Camera Hybrid
-                        Seminars, Live Streaming Video Productions, Trade Shows and much more!...</p>
-                    </li>
-                    <li>
-                        <img src="" alt="Image of SRA Events">
-                        <h3>SRA Events</h3>
-                        <p>Your special event is our opportunity to exceed your expectations. Our facility has been newly remolded and expanded to
-                        accommodate a wide variety of business meetings, parties, and conferences...</p>
-                    </li>
-                    <li>
-                        <img src="" alt="Image of E-vent: Online Event Platform">
-                        <h3>E-vent: Online Event Platform</h3>
-                        <p>e-vent is the virtual + hybrid event platform built for engagement and event excellence. e-vent's mission is to drive
-                        engagement - first and foremost - yielding greater business results...</p>
-                    </li>
-                    <li>
-                        <img src="" alt="Image of SoftwareHouse Services">
-                        <h3>SoftwareHouse Services</h3>
-                        <p>Welcome to SoftwareHouse Services, the ideal location for your next business event. Would you like to invite your
-                        customers to a unique product presentation? Or do you want to reward your...</p>
-                    </li>
-                    <li>
-                        <img src="" alt="Image of Shanghai Convention Center">
-                        <h3>Shanghai Convention Center</h3>
-                        <p>Shanghai Convention Center is your one-stop
-                        destination to conduct any event of your choice with perfection that exceeds expectations!We are forever committed to
-                        actualizing the dreams of every...</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Filters</h3>
-                <hr>
-                <p>Sort On</p>
-                <button type="button">standard</button>
-                <hr>
-                <p>Region</p>
-                <button type="button">Enter city,state,country...</button>
-                <hr>
-                <p>Budget</p>
-                <button type="button">Min</button>
-                <hr>
-                <button type="button">Max</button>
-                <hr>
-                <p>Reviews</p>
-                <ul>
-                    <li>
-                        <input type="checkbox">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                        <img src="./images/confetti.jpg" alt="Image of confetti icon">
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <div>
-                    <h4>Event Planning Services</h4>
-                    <ul>
-                        <li>
-                            <p>Wedding</p>
-                            <p>Baby Shower</p>
-                        </li>
-                        <li>
-                            <p>Bachelor's/Bachelorettes's Party</p>
-                            <p>Gender Reveal Party</p>
-                        </li>
-                        <li>
-                            <p>Birthday Party</p>
-                            <p>Business Events</p>
-                        </li>
-                        <li>
-                            <p>Graduation Party</p>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li>
-                            <p>Event photographers</p>
-                            <p>Music</p>
-                        </li>
-                        <li>
-                            <p>Catering</p>
-                            <p>Event Venues</p>
-                        </li>
-                        <li>
-                            <p>Entertainment</p>
-                        </li>
-                        <li>
-                            <p>Make-up Artists</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-    <div id="other-services-page" class="page">
-        <header>
-            <div>
-            <nav>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <ul>
-                    <li>
-                        <a href="#login">log in</a>
-                    </li>
-                    <li>
-                        <a href="#signup">sign up</a>
-                    </li>
-                    <li>
-                        <a href="#assistant">assistant</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
-
-            <div id="partypalette-own-services">
-                <div>
-                    <div>
-                        <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                        <h1>PartyPalette's Own Services!</h1>
-                    </div>
-
-                    <p>Did you know that PartyPalette offers services for sale?
-                        You can reach us at these addresses!
-                    </p>
-
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="./index.html">
-                                    <img src="./images/mail-icon.jpg" alt="Image of mail icon">
-                                    partypalette@uskudar.tr
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./index.html">
-                                    <img src="./images/phone-icon(2).jpg" alt="Image of phone icon">
-                                    +90 0 (555) 555 555
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="./index.html">
-                                    <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./index.html">
-                                    <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./index.html">
-                                    <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
+  <div id="santorini-wedding-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#login">log in</a>
+          </li>
+          <li>
+            <a href="#signup">sign up</a>
+          </li>
+          <li>
+            <a href="#assistant">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <div id="wedding-photographs">
         <div>
-            <section id="services">
-                <ul>
-                    <li>
-                        <img src="./images/catering.jpg" alt="Image of Catering">
-                        <h2>CATERING</h2>
-                        <p>Healthy and delicious treats are very important for an invitation. PartyPalette's talented chefs provide
-                            delectable
-                            treats for your event as part of our catering services. Your guests will love the delicious treats!</p>
-                    </li>
-                    <li>
-                        <img src="./images/music.jpg" alt="Image of Music">
-                        <h2>MUSIC</h2>
-                        <p>Of course, music is a must for special events. With their wide repertoire, PartyPalette musicians will sing
-                            their most
-                            special songs for you! All you and your guests will have to do is enjoy the music.</p>
-                    </li>
-                    <li>
-                        <img src="./images/photo-video.jpg" alt="Image of photo/video produciton">
-                        <h2>PHOTO/VIDEO PRODUCTION</h2>
-                        <p>It is your most natural desire to want to immortalize your most special day. Our expert photographers and
-                            director team
-                            will be with you to immortalize your memories!</p>
-                    </li>
-                    <li>
-                        <img src="./images/hairdressing.jpg" alt="Image of hairdressing">
-                        <h2>HAIRDRESSING</h2>
-                        <p>Hair and makeup are definitely the perfect addition to stylish outfits, shoes, and jewelry. Our expert
-                            hairdressers and
-                            make-up artists are with you on your most special day!</p>
-                    </li>
-                    <li>
-                        <img src="./images/security.jpg" alt="Image of security">
-                        <h2>SECURITY</h2>
-                        <p>The safety of your family and special guests is of course very important. The security of your invitations is
-                            entrusted
-                            to us with our expert security staff. All you have to do is enjoy the moment safely!</p>
-                    </li>
-                    <li>
-                        <img src="./images/venue.jpg" alt="Image of venue">
-                        <h2>VENUE</h2>
-                        <p>Are you looking for a suitable venue for your invitations? PartyPalette venues with different themes are now
-                            at your
-                            service. Contact us for our easy-to-transport, stylish and high-capacity venues!</p>
-                    </li>
-                </ul>
-                <div>
-                    <img src="./images/Support-team-icon.jpg" alt="Image of support team icon">
-                    <p>Support Team</p>
-                </div>
-            </section>
+          <img src="./images/Santorini(1).jpg" alt="Image of Santorini Wedding One" width="670" height="325" />
         </div>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+        <div>
+          <ul>
+            <li>
+              <img src="./images/Santorini(2).jpg" alt="Image of Santorini Wedding Two" width="128" height="100" />
+              <img src="./images/Santorini(3).jpg" alt="Image of Santorini Wedding Three" width="128" height="100" />
+            </li>
+            <li>
+              <img src="./images/Santorini(4).jpg" alt="Image of Santorini Wedding Two" width="128" height="100" />
+              <img src="./images/Santorini(5).jpg" alt="Image of Santorini Wedding Five" width="128" height="100" />
+            </li>
+            <li>
+              <img src="./images/Santorini(6).jpg" alt="Image of Santorini Wedding Six" width="128" height="100" />
+              <img src="./images/More.jpg" alt="Image of more image" width="128" height="100" />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="./images/pagination.jpg" alt="Image of pagination" />
+        </div>
+      </div>
 
-    <div id="page11" class="page">
-        <header>
-            <div>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette</a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">log in</a>
-                        </li>
-                        <li>
-                            <a href="#">sign up</a>
-                        </li>
-                        <li>
-                            <a href="#">list your business</a>
-                        </li>
-                        <li>
-                            <a href="#">assistant</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h1>List your part planning business with us, reach more customers, and celebrate success!</h1>
-                <button type="button">Add your business</button>
-            </div>
-        </header>
-    </div>
+      <section id="santorini-planning">
+        <h2>Santorini Planning Inc.</h2>
+        <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24" />
+        <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24" />
+        <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24" />
+        <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24" />
+        <img src="./images/confetti.jpg" alt="Image of confetti icon" width="24" />
+        <p>5.0 party points - 20 reviews</p>
+      </section>
 
-    <div id="page12" class="page">
-        <header>
-            <div>
-                <a href="./index.html">
-                    <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                    PartyPalette<alt>.Business</alt></a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">log in</a>
-                        </li>
-                        <li>
-                            <a href="#">sign up</a>
-                        </li>
-                        <li>
-                            <a href="#">list your business</a>
-                        </li>
-                        <li>
-                            <a href="#">assistant</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+      <div id="contact-form">
+        <div>
+          <p>
+            BEAUTIFUL MOMENTS of romance, love and dreams<br />
+            By SANTORINI PLANNING INC.<br />
+            Finding beauty. That's what we do. We plan for the greatest day of
+            your life, tending to every exquisite detail down to the last
+            candle, ribbon and rose petal. Weddings Santorini offers
+            breathtaking wedding venues, impeccable planning services and a
+            plethora of wedding day extras; your every wish is our command.
+            Professional excellence with a friendly smile, lavish and
+            unforgettable events. What could be better?
+          </p>
+        </div>
+        <section id="contact form">
+          <h2>Contact Form</h2>
+          <form>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name-Surname" /><br /><br />
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="E-mail" /><br /><br />
+
+            <label for="phonenumber"></label>
+            <input type="number" id="phonenumber" name="phonenumber" placeholder="Phone number" /><br /><br />
+
+            <label for="eventdate"></label>
+            <input type="date" id="eventdate" name="eventdate" value="2024-10-29" /><br /><br />
+
+            <label for="participants"></label>
+            <input type="number" id="participants" name="participants" placeholder="Participants" /><br /><br />
+
+            <label for="askabout"></label>
+            <input type="text" id="askabout" name="askabout"
+              placeholder="Ask about the price,menu,capacity etc." /><br /><br />
+
+            <button type="submit">Get Quote</button>
+            <p>**You will contact Santorini Planning Inc.</p>
+          </form>
+        </section>
+      </div>
+
+      <section id="offers">
+        <h2>Plan Offers</h2>
+        <div>
+          <ul>
+            <li>
+              <h3>Outside Wedding Plan</h3>
+              <ul>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>Min. 50, max. 200 people</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>
+                    Cliffside verande overlooking the sunset for the ceremony
+                  </p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>Flowers and decoration</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>Tiffany style platinum or white chairs set up</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>Wedding table with white linen</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>DJ, music & sound system</p>
+                  <p><sub>(allowed until 00:30 am)</sub></p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>
+                    Food, beverages & wedding cake<sub>(contact us for the menu)</sub>
+                  </p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>Fireworks<sub>(allowed until 22.30 pm)</sub></p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" width="22" height="20" />
+                  <p>
+                    Photographer to take pictures of you in extraordinary
+                    island view
+                  </p>
+                </li>
+              </ul>
+              <button type="button">
+                $250 <br />
+                per person
+              </button>
+            </li>
+            <li>
+              <h3>Inside Wedding Plan</h3>
+              <ul>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Min. 200, max. 800 people</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Spacious wedding hall</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Flowers and decoration</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Tiffany style platinum or white chairs set up</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Wedding table with white linen</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>DJ, music & sound system</p>
+                  <p><sub>(allowed until 00:30 am)</sub></p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>
+                    Food, beverages & wedding cake
+                    <sub>(contact us for the menu)</sub>
+                  </p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Photographer</p>
+                </li>
+                <li>No kids on the dance floor</li>
+              </ul>
+              <button type="button">
+                $200 <br />
+                per person
+              </button>
+            </li>
+            <li>
+              <h3>DELUXE Wedding Plan</h3>
+              <ul>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Outside or inside, all previous features are included</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>No participant limit</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Live music & band</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>After party<sub>(beverages & dessert)</sub></p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Dancers</p>
+                </li>
+                <li>
+                  <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+                  <p>Animators to entertain kids</p>
+                </li>
+              </ul>
+              <button type="button">
+                $400 <br />
+                per person
+              </button>
+            </li>
+          </ul>
+          <p>
+            ***Contact us for add or drop features and get detailed
+            information
+          </p>
+        </div>
+      </section>
+
+      <div id="reviews">
         <section>
+          <h3>Reviews</h3>
+          <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34" />
+          <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34" />
+          <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34" />
+          <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34" />
+          <img src="./images/confetti.jpg" alt="Image of confetti icon" width="32" height="34" />
+          <ul>
+            <li>
+              <h3>5.0 Fantastic</h3>
+              <p>-20 reviews</p>
+            </li>
+          </ul>
+        </section>
+        <div>
+          <ul>
+            <li>
+              <h4>Quality of Service</h4>
+              <h4>Average response time</h4>
+            </li>
+            <li>
+              <h4>Professionalism</h4>
+              <h4>Value</h4>
+            </li>
+            <li>
+              <h4>Flexibility</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    >
+    <footer>
+      <div>
+        <div>
+          <h4>Event Planning Services</h4>
+          <ul>
+            <li>
+              <p>Wedding</p>
+              <p>Baby Shower</p>
+            </li>
+            <li>
+              <p>Bachelor's/Bachelorettes's Party</p>
+              <p>Gender Reveal Party</p>
+            </li>
+            <li>
+              <p>Birthday Party</p>
+              <p>Business Events</p>
+            </li>
+            <li>
+              <p>Graduation Party</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other Services</h4>
+          <ul>
+            <li>
+              <p>Event photographers</p>
+              <p>Music</p>
+            </li>
+            <li>
+              <p>Catering</p>
+              <p>Event Venues</p>
+            </li>
+            <li>
+              <p>Entertainment</p>
+            </li>
+            <li>
+              <p>Make-up Artists</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div id="login-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#login">log in</a>
+          </li>
+          <li>
+            <a href="#signup">sign up</a>
+          </li>
+          <li>
+            <a href="#assistant">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="login">
+      <h3>Log in</h3>
+      <hr />
+      <form action="javascript:void(0);">
+        <label for="email"></label><br />
+        <input type="email" id="email" name="email" required placeholder="E-mail Address" /><br /><br />
+
+        <label for="password"></label><br />
+        <input type="password" id="password" name="password" required placeholder="Password" /><br /><br />
+        <a href="index.html/">Forgot Password?</a>
+        <br />
+        <button type="submit">Log In</button>
+      </form>
+      <span>or</span>
+      <br />
+      <button type="button">
+        <img src="./images/facebook-icon.jpg" alt="Image of facebook icon" width="25" />
+        Continue with Facebook
+      </button>
+      <button type="button">
+        <img src="./images/google-icon.jpg" alt="Image of google icon" width="25" />
+        Continue with Google
+      </button>
+      <p>
+        <bold>Dont have an account?</bold>
+      </p>
+      <button type="submit">Sign Up</button>
+
+      <div>
+        <div>
+          <h4>Event Planning Services</h4>
+          <ul>
+            <li>
+              <p>Wedding</p>
+              <p>Baby Shower</p>
+            </li>
+            <li>
+              <p>Bachelor's/Bachelorettes's Party</p>
+              <p>Gender Reveal Party</p>
+            </li>
+            <li>
+              <p>Birthday Party</p>
+              <p>Business Events</p>
+            </li>
+            <li>
+              <p>Graduation Party</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other Services</h4>
+          <ul>
+            <li>
+              <p>Event photographers</p>
+              <p>Music</p>
+            </li>
+            <li>
+              <p>Catering</p>
+              <p>Event Venues</p>
+            </li>
+            <li>
+              <p>Entertainment</p>
+            </li>
+            <li>
+              <p>Make-up Artists</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div id="signup-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#">log in</a>
+          </li>
+          <li>
+            <a href="#">sign up</a>
+          </li>
+          <li>
+            <a href="#">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="signup">
+      <div>
+        <h3>Sign Up</h3>
+        <hr />
+        <form>
+          <label for="firstName"></label><br />
+          <input type="text" id="firstName" name="firstName" required placeholder="First Name" /><br /><br />
+
+          <label for="lastName"></label><br />
+          <input type="text" id="lastName" name="lastName" required placeholder="Last name" /><br /><br />
+
+          <label for="email"></label><br />
+          <input type="email" id="email" name="email" required placeholder="E-mail Address" /><br /><br />
+
+          <label for="phone"></label><br />
+          <input type="tel" id="phone" name="phone" required placeholder="Phone Number" /><br /><br />
+
+          <label for="dob"></label><br />
+          <input type="date" id="dob" name="dob" required placeholder="Date of Birth" /><br /><br />
+
+          <label for="password"></label><br />
+          <input type="password" id="password" name="password" required placeholder="Password" /><br /><br />
+
+          <label for="passwordAgain"></label><br />
+          <input type="password" id="passwordAgain" name="passwordAgain" required
+            placeholder="Password Again" /><br /><br />
+
+          <ul>
+            <li>
+              <p>Already a member?</p>
+              <a href="/">Log in</a>
+            </li>
+          </ul>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div>
+        <div>
+          <h4>Event Planning Services</h4>
+          <ul>
+            <li>
+              <p>Wedding</p>
+              <p>Baby Shower</p>
+            </li>
+            <li>
+              <p>Bachelor's/Bachelorettes's Party</p>
+              <p>Gender Reveal Party</p>
+            </li>
+            <li>
+              <p>Birthday Party</p>
+              <p>Business Events</p>
+            </li>
+            <li>
+              <p>Graduation Party</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other Services</h4>
+          <ul>
+            <li>
+              <p>Event photographers</p>
+              <p>Music</p>
+            </li>
+            <li>
+              <p>Catering</p>
+              <p>Event Venues</p>
+            </li>
+            <li>
+              <p>Entertainment</p>
+            </li>
+            <li>
+              <p>Make-up Artists</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div id="order-form-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#">log in</a>
+          </li>
+          <li>
+            <a href="#">sign up</a>
+          </li>
+          <li>
+            <a href="#">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <section id="order-form">
+        <h3>ORDER FORM</h3>
+        <hr />
+        <form>
+          <ul>
+            <li>
+              <label for="name">Name*</label><br />
+              <input type="text" id="name" name="name" required /><br /><br />
+
+              <label for="surname">Surname*</label><br />
+              <input type="text" id="surname" name="surname" required /><br /><br />
+            </li>
+            <li>
+              <label for="email">E-mail*</label><br />
+              <input type="email" id="email" name="email" required /><br /><br />
+
+              <label for="phone-number">Phone Number*</label><br />
+              <input type="number" id="phone-number" name="phone-number" required /><br /><br />
+            </li>
+            <li>
+              <label for="address">Address*</label><br />
+              <input type="txt" id="address" name="address" required /><br /><br />
+            </li>
+            <li>
+              <label for="date">Date*</label><br />
+              <input type="date" id="date" name="date" required value="20241030" /><br /><br />
+
+              <label for="guests">Number of Guests*</label><br />
+              <input type="number" id="guests" name="guests" required /><br /><br />
+            </li>
+            <li>
+              <label for="fileUpload">Music Playlist</label><br />
+              <input type="file" id="fileUpload" name="fileUpload" accept=".txt" /><br /><br />
+
+              <label for="menu-options">Food Menu</label>
+              <select id="menu-options" name="menu-options" required>
+                <option value="" disabled selected>Choose...</option>
+                <option value="flavor-haven">Flavor Haven</option>
+                <option value="taste-trails">Taste Trails</option>
+              </select>
+            </li>
+          </ul>
+
+          <label for="decoration-options">Extras</label>
+          <select id="decoration-options" name="decoration-options" required>
+            <option value="" disabled selected>Choose...</option>
+            <option value="balloons">Balloons</option>
+            <option value="flowers">Flowers</option>
+          </select><br /><br />
+
+          <label for="your-notes">Your Notes</label><br />
+          <input type="text" id="your-notes" name="your-notes" required placeholder="Write here..." /><br /><br />
+
+          <button type="submit">Send</button>
+        </form>
+
+        <div>
+          <div>
+            <h4>Event Planning Services</h4>
+            <ul>
+              <li>
+                <p>Wedding</p>
+                <p>Baby Shower</p>
+              </li>
+              <li>
+                <p>Bachelor's/Bachelorettes's Party</p>
+                <p>Gender Reveal Party</p>
+              </li>
+              <li>
+                <p>Birthday Party</p>
+                <p>Business Events</p>
+              </li>
+              <li>
+                <p>Graduation Party</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Other Services</h4>
+            <ul>
+              <li>
+                <p>Event photographers</p>
+                <p>Music</p>
+              </li>
+              <li>
+                <p>Catering</p>
+                <p>Event Venues</p>
+              </li>
+              <li>
+                <p>Entertainment</p>
+              </li>
+              <li>
+                <p>Make-up Artists</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div id="payment-page" class="page">
+    <header>
+      <a href="./index.html">
+        <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+        PartyPalette</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">log in</a>
+          </li>
+          <li>
+            <a href="#">sign up</a>
+          </li>
+          <li>
+            <a href="#">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <ul>
+          <li>
+            <img src="./images/address-icon.jpg" alt="Image of address icon" width="108" height="102" />
+            <p>Business and Contact Address</p>
+          </li>
+          <li>
+            <img src="./images/phone-icon.jpg" alt="Image of phone icon" width="108" height="102" />
+            <p>Mobile or Telephone Number</p>
+          </li>
+          <li>
+            <img src="./images/mastercard-icon.jpg" alt="Image of mastercard icon" width="108" height="102" />
+            <p>Chargeable Credit Card</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="payment">
+        <ul>
+          <li>Card Number</li>
+          <li>Name On the Card</li>
+          <li>Expiration Date</li>
+          <li>CVC</li>
+        </ul>
+
+        <div>
+          <div>
+            <form>
+              <label for="card1"></label><br />
+
+              <input type="text" id="card1" name="card1" maxlength="4" size="4" pattern="\d{4}" required />
+              <input type="text" id="card2" name="card2" maxlength="4" size="4" pattern="\d{4}" required />
+              <input type="text" id="card3" name="card3" maxlength="4" size="4" pattern="\d{4}" required />
+              <input type="text" id="card4" name="card4" maxlength="4" size="4" pattern="\d{4}" required />
+            </form>
+          </div>
+
+          <div>
+            <form>
+              <label for="name-on-the-card"></label>
+              <input type="text" id="name-on-the-card" name="name-on-the-card" />
+            </form>
+          </div>
+
+          <div>
+            <form>
+              <label for="expiry-month"></label>
+              <select id="expiry-month" name="expiry-month" required>
+                <option value="" disabled selected>Month</option>
+                <option value="01">01 - January</option>
+                <option value="02">02 - February</option>
+                <option value="03">03 - March</option>
+                <option value="04">04 - April</option>
+                <option value="05">05 - May</option>
+                <option value="06">06 - June</option>
+                <option value="07">07 - July</option>
+                <option value="08">08 - August</option>
+                <option value="09">09 - September</option>
+                <option value="10">10 - October</option>
+                <option value="11">11 - November</option>
+                <option value="12">12 - December</option>
+              </select>
+
+              <label for="expiry-year"></label>
+              <select id="expiry-year" name="expiry-year" required>
+                <option value="" disabled selected>Year</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </form>
+          </div>
+
+          <div>
+            <form>
+              <label for="cvc"></label>
+              <input type="number" id="cvc" name="cvc" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit">next</button>
+      </div>
+    </section>
+    <footer></footer>
+  </div>
+
+  <div id="order-requested-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+        <ul>
+          <li>
+            <a href="#">log in</a>
+          </li>
+          <li>
+            <a href="#">sign up</a>
+          </li>
+          <li>
+            <a href="#">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="order-feedback">
+        <div>
+          <img src="./images/tick-icon.jpg" alt="Image of tick icon" />
+          <p>Thank You!</p>
+        </div>
+        <div>
+          <p>
+            Your order has been received. Our organizer will contact you as
+            soon as possible. Thank you for choosing PartyPalette!
+          </p>
+          <br />
+          <p>Order Number: 9999999999</p>
+        </div>
+      </div>
+      <div id="support-team">
+        <img src="./images/Support-team-icon.jpg" alt="Image of support team icon" />
+        <p>Support Team</p>
+      </div>
+    </section>
+    <footer></footer>
+  </div>
+
+  <div id="search-business-page" class="page">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+          PartyPalette</a>
+
+        <form action="/search" method="GET">
+          <input type="text" name="query" placeholder="Search" required />
+        </form>
+
+        <ul>
+          <li>
+            <a href="#login">log in</a>
+          </li>
+          <li>
+            <a href="#signup">sign up</a>
+          </li>
+          <li>
+            <a href="#list-your-business">list your business</a>
+          </li>
+          <li>
+            <a href="#">assistant</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <ul>
+          <li>
+            <img src="" alt="Image of Business Event Center" />
+            <h3>Business Event Center</h3>
+            <p>
+              Our Ballroom is absolutely perfect for Corporate Conventions,
+              Virtual Business Conferences, Multi- Camera Hybrid Seminars,
+              Live Streaming Video Productions, Trade Shows and much more!...
+            </p>
+          </li>
+          <li>
+            <img src="" alt="Image of SRA Events" />
+            <h3>SRA Events</h3>
+            <p>
+              Your special event is our opportunity to exceed your
+              expectations. Our facility has been newly remolded and expanded
+              to accommodate a wide variety of business meetings, parties, and
+              conferences...
+            </p>
+          </li>
+          <li>
+            <img src="" alt="Image of E-vent: Online Event Platform" />
+            <h3>E-vent: Online Event Platform</h3>
+            <p>
+              e-vent is the virtual + hybrid event platform built for
+              engagement and event excellence. e-vent's mission is to drive
+              engagement - first and foremost - yielding greater business
+              results...
+            </p>
+          </li>
+          <li>
+            <img src="" alt="Image of SoftwareHouse Services" />
+            <h3>SoftwareHouse Services</h3>
+            <p>
+              Welcome to SoftwareHouse Services, the ideal location for your
+              next business event. Would you like to invite your customers to
+              a unique product presentation? Or do you want to reward your...
+            </p>
+          </li>
+          <li>
+            <img src="" alt="Image of Shanghai Convention Center" />
+            <h3>Shanghai Convention Center</h3>
+            <p>
+              Shanghai Convention Center is your one-stop destination to
+              conduct any event of your choice with perfection that exceeds
+              expectations!We are forever committed to actualizing the dreams
+              of every...
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Filters</h3>
+        <hr />
+        <p>Sort On</p>
+        <button type="button">standard</button>
+        <hr />
+        <p>Region</p>
+        <button type="button">Enter city,state,country...</button>
+        <hr />
+        <p>Budget</p>
+        <button type="button">Min</button>
+        <hr />
+        <button type="button">Max</button>
+        <hr />
+        <p>Reviews</p>
+        <ul>
+          <li>
+            <input type="checkbox" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+          </li>
+          <li>
+            <input type="checkbox" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+          </li>
+          <li>
+            <input type="checkbox" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+          </li>
+          <li>
+            <input type="checkbox" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+          </li>
+          <li>
+            <input type="checkbox" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+            <img src="./images/confetti.jpg" alt="Image of confetti icon" />
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div>
+          <h4>Event Planning Services</h4>
+          <ul>
+            <li>
+              <p>Wedding</p>
+              <p>Baby Shower</p>
+            </li>
+            <li>
+              <p>Bachelor's/Bachelorettes's Party</p>
+              <p>Gender Reveal Party</p>
+            </li>
+            <li>
+              <p>Birthday Party</p>
+              <p>Business Events</p>
+            </li>
+            <li>
+              <p>Graduation Party</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other Services</h4>
+          <ul>
+            <li>
+              <p>Event photographers</p>
+              <p>Music</p>
+            </li>
+            <li>
+              <p>Catering</p>
+              <p>Event Venues</p>
+            </li>
+            <li>
+              <p>Entertainment</p>
+            </li>
+            <li>
+              <p>Make-up Artists</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div id="other-services-page" class="page">
+    <header>
+      <div>
+        <nav>
+          <a href="./index.html">
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+            PartyPalette</a>
+          <ul>
+            <li>
+              <a href="#login">log in</a>
+            </li>
+            <li>
+              <a href="#signup">sign up</a>
+            </li>
+            <li>
+              <a href="#assistant">assistant</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="partypalette-own-services">
+        <div>
+          <div>
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+            <h1>PartyPalette's Own Services!</h1>
+          </div>
+
+          <p>
+            Did you know that PartyPalette offers services for sale? You can
+            reach us at these addresses!
+          </p>
+
+          <div>
+            <ul>
+              <li>
+                <a href="./index.html">
+                  <img src="./images/mail-icon.jpg" alt="Image of mail icon" />
+                  partypalette@uskudar.tr
+                </a>
+              </li>
+              <li>
+                <a href="./index.html">
+                  <img src="./images/phone-icon(2).jpg" alt="Image of phone icon" />
+                  +90 0 (555) 555 555
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                <a href="./index.html">
+                  <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="./index.html">
+                  <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="./index.html">
+                  <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div>
+      <section id="services">
+        <ul>
+          <li>
+            <img src="./images/catering.jpg" alt="Image of Catering" />
+            <h2>CATERING</h2>
+            <p>
+              Healthy and delicious treats are very important for an
+              invitation. PartyPalette's talented chefs provide delectable
+              treats for your event as part of our catering services. Your
+              guests will love the delicious treats!
+            </p>
+          </li>
+          <li>
+            <img src="./images/music.jpg" alt="Image of Music" />
+            <h2>MUSIC</h2>
+            <p>
+              Of course, music is a must for special events. With their wide
+              repertoire, PartyPalette musicians will sing their most special
+              songs for you! All you and your guests will have to do is enjoy
+              the music.
+            </p>
+          </li>
+          <li>
+            <img src="./images/photo-video.jpg" alt="Image of photo/video produciton" />
+            <h2>PHOTO/VIDEO PRODUCTION</h2>
+            <p>
+              It is your most natural desire to want to immortalize your most
+              special day. Our expert photographers and director team will be
+              with you to immortalize your memories!
+            </p>
+          </li>
+          <li>
+            <img src="./images/hairdressing.jpg" alt="Image of hairdressing" />
+            <h2>HAIRDRESSING</h2>
+            <p>
+              Hair and makeup are definitely the perfect addition to stylish
+              outfits, shoes, and jewelry. Our expert hairdressers and make-up
+              artists are with you on your most special day!
+            </p>
+          </li>
+          <li>
+            <img src="./images/security.jpg" alt="Image of security" />
+            <h2>SECURITY</h2>
+            <p>
+              The safety of your family and special guests is of course very
+              important. The security of your invitations is entrusted to us
+              with our expert security staff. All you have to do is enjoy the
+              moment safely!
+            </p>
+          </li>
+          <li>
+            <img src="./images/venue.jpg" alt="Image of venue" />
+            <h2>VENUE</h2>
+            <p>
+              Are you looking for a suitable venue for your invitations?
+              PartyPalette venues with different themes are now at your
+              service. Contact us for our easy-to-transport, stylish and
+              high-capacity venues!
+            </p>
+          </li>
+        </ul>
+        <div>
+          <img src="./images/Support-team-icon.jpg" alt="Image of support team icon" />
+          <p>Support Team</p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div id="list-business-page" class="page">
+    <header>
+      <div>
+        <nav>
+          <a href="./index.html">
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+            PartyPalette</a>
+          <ul>
+            <li>
+              <a href="#login">log in</a>
+            </li>
+            <li>
+              <a href="#signup">sign up</a>
+            </li>
+            <li>
+              <a href="#list-your-business">list your business</a>
+            </li>
+            <li>
+              <a href="#assistant">assistant</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <h1>
+          List your part planning business with us, reach more customers, and
+          celebrate success!
+        </h1>
+        <button type="button">Add your business</button>
+      </div>
+    </header>
+  </div>
+
+  <div id="create-business-page" class="page">
+    <header>
+      <div>
+        <nav>
+          <a href="./index.html">
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+            PartyPalette<alt>.Business</alt></a>
+          <ul>
+            <li>
+              <a href="#login">log in</a>
+            </li>
+            <li>
+              <a href="#signup">sign up</a>
+            </li>
+            <li>
+              <a href="#list-your-business">list your business</a>
+            </li>
+            <li>
+              <a href="#assistant">assistant</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section aria-label="create-business">
+      <section>
+        <form>
+          <h2>Create business page</h2>
+          <div>
+            <label for="company-name"></label>
+            <input type="text" id="company-name" name="company-name" required placeholder="company name" />
+          </div>
+          <div>
             <section>
-                <h2>Create business page</h2>
-                <div>
-                    <form>
-                        <label for="company-name"></label>
-                        <input type="text" id="company-name" name="company-name" required placeholder="company name">
-                    </form>
-                </div>
-                <div>
-                    <div>
-                        <h3>Business address</h3>
-                        <ul>
-                            <li>
-                                <div>
-                                    <form>
-                                        <label for="street"></label>
-                                        <input type="text" id="street" name="street" required placeholder="street">
-                                        
-                                        <label for="post-code"></label>
-                                        <input type="text" id="post-code" name="post-code" required placeholder="post code">
-
-                                        <label for="city"></label>
-                                        <input type="text" id="city" name="city" required placeholder="city">
-                                    </form>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label for="country"></label>
-                                    <input type="text" id="country" name="country" required placeholder="country">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div></div>
-                    <div></div>
-                </div>
-                
-                <div>
-                    <div>
-                        <h3>Business information</h3>
-                        <ul>
-                            <li>
-                                <div>
-                                    <form>
-                                        <label for="phone"></label>
-                                        <input type="text" id="phone" name="phone" required placeholder="phone">
-                
-                                        <label for="e-mail"></label>
-                                        <input type="email" id="" name="e-mail" required placeholder="e-mail">
-                
-                                        <label for="website"></label>
-                                        <input type="url" id="website" name="website" required placeholder="website">
-                                    </form>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label for="mobile"></label>
-                                    <input type="text" id="mobile" name="mobile" required placeholder="mobile">
-
-                                    <label for="socials"></label>
-                                    <input type="text" id="socials" name="socials" required placeholder="socials">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <div>
-                    <div>
-                        <h3>Contact person</h3>
-                        <ul>
-                            <li>
-                                <div>
-                                    <form>
-                                        <label for="name"></label>
-                                        <input type="text" id="name" name="name" required placeholder="name">
-                
-                                        <label for="e-mail"></label>
-                                        <input type="email" id="" name="e-mail" required placeholder="e-mail">
-                
-                                        <label for="dob"></label>
-                                        <input type="date" id="dob" name="dob" required placeholder="date of birth">
-                                    </form>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label for="mobile"></label>
-                                    <input type="text" id="mobile" name="mobile" required placeholder="mobile">
-                
-                                    <label for="password"></label>
-                                    <input type="password" id="password" name="password" required placeholder="password">
-
-                                    <label for="confirm-password"></label>
-                                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="confirm password">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <form>
-                        <label>
-                            <input type="checkbox" name="checkbox1" required>
-                            I agree with the Terms of Use, Terms of Sale and declare to have taken note of the Privacy Policy
-                        </label><br>
-                        
-                        <label>
-                            <input type="checkbox" name="checkbox2" required>
-                            Yes, I want to get the most out of partypalette.net by subscribing for free (newsletter)
-                        </label><br>
-                        </form>
-                    </div>
-
-                    <div>
-                        <button type="submit">send</button>
-                    </div>
-                </div>
-
-                <div>
-                    <ul>
-                        <li>
-                            <h4>Event Planning Services</h4>
-                            <ul>
-                                <li>
-                                    <p>Wedding</p>
-                                    <p>Baby Shower</p>
-                                </li>
-                                <li>
-                                    <p>Bachelor's/Bachelorettes's Party</p>
-                                    <p>Gender Reveal Party</p>
-                                </li>
-                                <li>
-                                    <p>Birthday Party</p>
-                                    <p>Business Events</p>
-                                </li>
-                                <li>
-                                    <p>Graduation Party</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h4>Other Services</h4>
-                            <ul>
-                                <li>
-                                    <p>Event photographers</p>
-                                    <p>Music</p>
-                                </li>
-                                <li>
-                                    <p>Catering</p>
-                                    <p>Event Venues</p>
-                                </li>
-                                <li>
-                                    <p>Entertainment</p>
-                                </li>
-                                <li>
-                                    <p>Make-up Artists</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+              <h3>Business address</h3>
+              <ul>
+                <li>
+                  <label for="street"></label>
+                  <input type="text" id="street" name="street" required placeholder="street" />
+                </li>
+                <li>
+                  <label for="post-code"></label>
+                  <input type="text" id="post-code" name="post-code" required placeholder="post code" />
+                </li>
+                <li>
+                  <label for="city"></label>
+                  <input type="text" id="city" name="city" required placeholder="city" />
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label for="country"></label>
+                  <input type="text" id="country" name="country" required placeholder="country" />
+                </li>
+              </ul>
             </section>
-        </section>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-    <div id="page13" class="page">
-        <header>
-            <ul>
+            <section>
+              <h3>Business information</h3>
+              <ul>
                 <li>
-                    <a href="./index.html">
-                        <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                        PartyPalette<alt>.business</alt></a>
-        
-                    <form action="/search" method="GET">
-                        <input type="text" name="query" placeholder="Search" required>
-                    </form>
+                  <label for="phone"></label>
+                  <input type="text" id="phone" name="phone" required placeholder="phone" />
                 </li>
-            </ul>
-        
-            <nav>
-                <p>Santorini Planning Inc.</p>
-                <img src="./images/Santorini-circle.jpg" alt="Image of Santorini Wedding">
-            </nav>
-        </header>
+                <li>
+                  <label for="e-mail"></label>
+                  <input type="email" id="" name="e-mail" required placeholder="e-mail" />
+                </li>
+                <li>
+                  <label for="website"></label>
+                  <input type="url" id="website" name="website" required placeholder="website" />
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <label for="mobile"></label>
+                  <input type="text" id="mobile" name="mobile" required placeholder="mobile" />
+                </li>
+                <li>
+                  <label for="socials"></label>
+                  <input type="text" id="socials" name="socials" required placeholder="socials" />
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3>Contact person</h3>
+              <ul>
+                <li>
+                  <label for="name"></label>
+                  <input type="text" id="name" name="name" required placeholder="name" />
+                </li>
+                <li>
+                  <label for="e-mail"></label>
+                  <input type="email" id="" name="e-mail" required placeholder="e-mail" />
+                </li>
+                <li>
+                  <label for="dob"></label>
+                  <input type="date" id="dob" name="dob" required placeholder="date of birth" />
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <label for="mobile"></label>
+                  <input type="text" id="mobile" name="mobile" required placeholder="mobile" />
+                </li>
+                <li>
+                  <label for="password"></label>
+                  <input type="password" id="password" name="password" required placeholder="password" />
+                </li>
+                <li>
+                  <label for="confirm-password"></label>
+                  <input type="password" id="confirm-password" name="confirm-password" required
+                    placeholder="confirm password" />
+                </li>
+              </ul>
+            </section>
+
+            <div>
+              <label>
+                <input type="checkbox" name="checkbox1" required />
+                I agree with the Terms of Use, Terms of Sale and declare to
+                have taken note of the Privacy Policy </label><br />
+
+              <label>
+                <input type="checkbox" name="checkbox2" required />
+                Yes, I want to get the most out of partypalette.net by
+                subscribing for free (newsletter) </label><br />
+            </div>
+
+            <div>
+              <button type="submit">send</button>
+            </div>
+          </div>
+        </form>
         <div>
-            
-
-            <div>
-                <div>
-                <ul>
-                    <li>
-                        <div>
-                            <a href="./index.html">Calender</a>
-                            <a href="./index.html">Payment</a>
-                            <a href="./index.html">Plan Offers</a>
-                            <a href="./index.html">Orders</a>
-                            <a href="./index.html">Management</a>
-                            <a href="./index.html">Statistics</a>
-                        </div>
-                    </li>
-                </ul>
-                </div>
-                <div>
-                <h6>December</h6>
-                <ul>
-                    <li>
-                        <div>
-                            <span>SUN</span>
-                            <span>MON</span>
-                            <span>TUE</span>
-                            <span>WED</span>
-                            <span>THU</span>
-                            <span>FRI</span>
-                            <span>SAT</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>26</span>
-                            <span>27</span>
-                            <span>28</span>
-                            <span>29</span>
-                            <span>30</span>
-                            <span>1</span>
-                            <span>2</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span>6</span>
-                            <span>7</span>
-                            <span>8</span>
-                            <span>9</span>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div>
-                            <span>10</span>
-                            <span>11</span>
-                            <span>12</span>
-                            <span>13</span>
-                            <span>14</span>
-                            <span>15</span>
-                            <span>16</span>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <span>17</span>
-                            <span>18</span>
-                            <span>19</span>
-                            <span>20</span>
-                            <span>21</span>
-                            <span>22</span>
-                            <span>23</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>24</span>
-                            <span>25</span>
-                            <span>26</span>
-                            <span>27</span>
-                            <span>28</span>
-                            <span>29</span>
-                            <span>30</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>31</span>
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span>6</span>
-                        </div>
-                    </li>
-                </ul>
-                </div>
-                <div>
-                <div>
-                    <!--Statics-->
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <div>
-                                <span>9.870</span><br>
-                                <span>TOTAL VISIT</span><br>
-                                <a href="./index.html">See the Report</a>
-                            </div>
-                            <div>
-                                <span>12</span><br>
-                                <span>PLANNED THIS MONTH</span><br>
-                                <a href="./index.html">Go to Calender</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>4</span><br>
-                                <span>IN PROGRESS</span><br>
-                                <a href="./index.html">Go to Statics</a>
-                            </div>
-                            <div>
-                                <span>856</span><br>
-                                <span>TOTAL PLANNED</span><br>
-                                <a href="./index.html">Go to History</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-                <div>
-                <div>
-                    <a href="./index.html">
-                        <img src="./images/mail-icon.jpg" alt="Image of mail icon">
-                        Inbox
-                    </a>
-                </div>
-                <div>
-                    <form>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="checkbox1">
-                            <p>
-                                <bold>Alice</bold><br>
-                                I would like to get detailed information a...
-                            </p>
-                        </label><br>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="checkbox2">
-                            <p>
-                                <bold>John</bold><br>
-                                We want to plan an inside wedding but ...
-                            </p>
-                        </label><br>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="checkbox3">
-                            <p>
-                                <bold>Becky</bold><br>
-                                Do you have vegan food in your menu?
-                            </p>
-                        </label><br>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="checkbox4">
-                            <p>
-                                <bold>David</bold><br>
-                                What color of flowers do you prefer for...
-                            </p>
-                        </label><br>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="checkbox5">
-                            <p>
-                                <bold>June</bold><br>
-                                Do you provide playing room for kids or ...
-                            </p>
-                        </label><br>
-                    </div>
-                    </form>
-                </div>
-                <div>
-                <h4>Upcoming events...</h4>
-                <div>
-                    <span>Name</span>
-                    <span>Order No</span>
-                    <span>Phone Number</span>
-                    <span>Plan Type</span>
-                    <span>Date</span>
-                    <span>Num. of Guests</span>
-                </div>
-
-                <div>
-                    <ul>
-                        <li>
-                            <div>
-                                <span>Sarah</span>
-                                <span>#127456</span>
-                                <span>+1 (314) 344-0366</span>
-                                <span>Inside Wedding</span>
-                                <span>03.01.2024</span>
-                                <span>456</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>Alex</span>
-                                <span>#127457</span>
-                                <span>+1 (540) 953-2839</span>
-                                <span>Outside Wedding</span>
-                                <span>05.01.2024</span>
-                                <span>223</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>Emily</span>
-                                <span>#127458</span>
-                                <span>+1 (269) 254-8512</span>
-                                <span>Delux Wedding</span>
-                                <span>08.01.2024</span>
-                                <span>124</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <span>Ali</span>
-                                <span>#127459</span>
-                                <span>+1 (601) 659-7589</span>
-                                <span>Inside Wedding</span>
-                                <span>12.01.2024</span>
-                                <span>543</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-                </div>
-            </div>
-
-            <div>
-            <a href="./index.html"></a>
-            Go "Orders" page to see the details
-            <img src="" alt="Image of arrow icon">
-            </div>
-
-            <div>
+          <div>
+            <h4>Event Planning Services</h4>
             <ul>
-                <li>
-                    <h4>Event Planning Services</h4>
-                    <ul>
-                        <li>
-                            <p>Wedding</p>
-                            <p>Baby Shower</p>
-                        </li>
-                        <li>
-                            <p>Bachelor's/Bachelorettes's Party</p>
-                            <p>Gender Reveal Party</p>
-                        </li>
-                        <li>
-                            <p>Birthday Party</p>
-                            <p>Business Events</p>
-                        </li>
-                        <li>
-                            <p>Graduation Party</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li>
-                            <p>Event photographers</p>
-                            <p>Music</p>
-                        </li>
-                        <li>
-                            <p>Catering</p>
-                            <p>Event Venues</p>
-                        </li>
-                        <li>
-                            <p>Entertainment</p>
-                        </li>
-                        <li>
-                            <p>Make-up Artists</p>
-                        </li>
-                    </ul>
-                </li>
+              <li>
+                <p>Wedding</p>
+                <p>Baby Shower</p>
+              </li>
+              <li>
+                <p>Bachelor's/Bachelorettes's Party</p>
+                <p>Gender Reveal Party</p>
+              </li>
+              <li>
+                <p>Birthday Party</p>
+                <p>Business Events</p>
+              </li>
+              <li>
+                <p>Graduation Party</p>
+              </li>
             </ul>
-            </div>
-
+          </div>
+          <div>
+            <h4>Other Services</h4>
+            <ul>
+              <li>
+                <p>Event photographers</p>
+                <p>Music</p>
+              </li>
+              <li>
+                <p>Catering</p>
+                <p>Event Venues</p>
+              </li>
+              <li>
+                <p>Entertainment</p>
+              </li>
+              <li>
+                <p>Make-up Artists</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <footer>
-            <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+      </section>
+    </section>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
-    <div id="page14" class="page">
-        <header>
-            <ul>
-                <li>
-                    <a href="./index.html">
-                        <img src="./images/PartyPaletteLogo.jpg" alt="Logo">
-                        PartyPalette<alt>.support team</alt></a>
-                </li>
-            </ul>
-        
-            <nav>
-                <p>my profile</p>
-                <img src="images/human-icon.jpg" alt="Image of human icon">
-            </nav>
-        </header>
+  <div id="page13" class="page">
+    <header>
+      <ul>
+        <li>
+          <a href="./index.html">
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+            PartyPalette<alt>.business</alt></a>
+
+          <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search" required />
+          </form>
+        </li>
+      </ul>
+
+      <nav>
+        <p>Santorini Planning Inc.</p>
+        <img src="./images/Santorini-circle.jpg" alt="Image of Santorini Wedding" />
+      </nav>
+    </header>
+    <div>
+      <div>
         <div>
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="Image of gear icon">
-                    </div>
-                    <div>
-                        <p></p>
-                        <img src="./images/mail-icon.jpg" alt="Image of mail icon">
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <form method="GET">
-                            <label for="search"></label>
-                            <input type="search" id="search" name="query" placeholder="search">
-                        </form>
-                    </div>
-                    <div>
-                        <ol>
-                            <li>
-                                <div>
-                                    <label>
-                                        <input type="checkbox" name="checkbox1">
-                                        <p>
-                                            <bold>Sarah</bold>-Need Help
-                                        </p>
-                                        <p>
-                                            Could you please guide me through the...
-                                        </p>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <input type="checkbox" name="checkbox2">
-                                    <p>
-                                        <bold>Alex</bold>-Information Request
-                                    </p>
-                                    <p>
-                                        I recently came across your website and...
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <input type="checkbox" name="checkbox3">
-                                    <p>
-                                        <bold>Emily</bold>-Password Reset Request
-                                    </p>
-                                    <p>
-                                        I'm having trouble accessing my account...
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <input type="checkbox" name="checkbox3">
-                                    <p>
-                                        <bold>Ali</bold>-Feedback on Recent Purchase
-                                    </p>
-                                    <p>
-                                        I recently purchased one of the offer plan...
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <input type="checkbox" name="checkbox4">
-                                    <p>
-                                        <bold>John</bold>-Order #12345 *Update*
-                                    </p>
-                                    <p>
-                                        Problem solved. Company has contacted...
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <input type="checkbox" name="checkbox4">
-                                    <p>
-                                        <bold>John</bold>-Order #12345
-                                    </p>
-                                    <p>
-                                        I placed an order on your website two...
-                                    </p>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div>
-                    <h2>Password Reset Request</h2>
-                    <p><alt>Inbox</alt></p>
-                    <div>
-                        <img src="./Human-icon(2).jpg" alt="Image of HUman Icon">
-                        <p><bold>Emily</bold>-10 min ago to me</p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="" alt="Image of star icon">
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <img src="" alt="Image of left arrow icon">
-                                </li>
-                                <li>
-                                    <img src="" alt="Image of ellipsis">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Password Reset Request</p>
-                        <p>Hi Support Team,</p>
-                        <p>I'm having trouble accessing my account on your platform. It seems that I've
-                        forgotten my password. Could you please assist me in resetting it or provide instructions on how I can regain access to
-                        my account?</p>
-                        <p>Thank you for your help.</p>
-                        <p>Sincerly,</p>
-                        <p>Emily</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h4>Event Planning Services</h4>
-                        <ul>
-                            <li>
-                                <p>Wedding</p>
-                                <p>Baby Shower</p>
-                            </li>
-                            <li>
-                                <p>Bachelor's/Bachelorettes's Party</p>
-                                <p>Gender Reveal Party</p>
-                            </li>
-                            <li>
-                                <p>Birthday Party</p>
-                                <p>Business Events</p>
-                            </li>
-                            <li>
-                                <p>Graduation Party</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Other Services</h4>
-                        <ul>
-                            <li>
-                                <p>Event photographers</p>
-                                <p>Music</p>
-                            </li>
-                            <li>
-                                <p>Catering</p>
-                                <p>Event Venues</p>
-                            </li>
-                            <li>
-                                <p>Entertainment</p>
-                            </li>
-                            <li>
-                                <p>Make-up Artists</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+          <ul>
+            <li>
+              <div>
+                <a href="./index.html">Calender</a>
+                <a href="./index.html">Payment</a>
+                <a href="./index.html">Plan Offers</a>
+                <a href="./index.html">Orders</a>
+                <a href="./index.html">Management</a>
+                <a href="./index.html">Statistics</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <footer>
+        <div>
+          <h6>December</h6>
+          <ul>
+            <li>
+              <div>
+                <span>SUN</span>
+                <span>MON</span>
+                <span>TUE</span>
+                <span>WED</span>
+                <span>THU</span>
+                <span>FRI</span>
+                <span>SAT</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+                <span>1</span>
+                <span>2</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <span>17</span>
+                <span>18</span>
+                <span>19</span>
+                <span>20</span>
+                <span>21</span>
+                <span>22</span>
+                <span>23</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>24</span>
+                <span>25</span>
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>31</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <!--Statics-->
+          </div>
+          <div>
+            <ul>
+              <li>
+                <div>
+                  <span>9.870</span><br />
+                  <span>TOTAL VISIT</span><br />
+                  <a href="./index.html">See the Report</a>
+                </div>
+                <div>
+                  <span>12</span><br />
+                  <span>PLANNED THIS MONTH</span><br />
+                  <a href="./index.html">Go to Calender</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>4</span><br />
+                  <span>IN PROGRESS</span><br />
+                  <a href="./index.html">Go to Statics</a>
+                </div>
+                <div>
+                  <span>856</span><br />
+                  <span>TOTAL PLANNED</span><br />
+                  <a href="./index.html">Go to History</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>
+            <a href="./index.html">
+              <img src="./images/mail-icon.jpg" alt="Image of mail icon" />
+              Inbox
+            </a>
+          </div>
+          <div>
+            <form>
+              <div>
+                <label>
+                  <input type="checkbox" name="checkbox1" />
+                  <p>
+                    <bold>Alice</bold><br />
+                    I would like to get detailed information a...
+                  </p>
+                </label><br />
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="checkbox2" />
+                  <p>
+                    <bold>John</bold><br />
+                    We want to plan an inside wedding but ...
+                  </p>
+                </label><br />
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="checkbox3" />
+                  <p>
+                    <bold>Becky</bold><br />
+                    Do you have vegan food in your menu?
+                  </p>
+                </label><br />
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="checkbox4" />
+                  <p>
+                    <bold>David</bold><br />
+                    What color of flowers do you prefer for...
+                  </p>
+                </label><br />
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="checkbox5" />
+                  <p>
+                    <bold>June</bold><br />
+                    Do you provide playing room for kids or ...
+                  </p>
+                </label><br />
+              </div>
+            </form>
+          </div>
+          <div>
+            <h4>Upcoming events...</h4>
             <div>
-                <p>help</p>
-                <hr>
-                <p>contact</p>
-                <hr>
-                <p>terms of use</p>
-                <hr>
-                <p>cookies</p>
-                <hr>
-                <p>language</p>
+              <span>Name</span>
+              <span>Order No</span>
+              <span>Phone Number</span>
+              <span>Plan Type</span>
+              <span>Date</span>
+              <span>Num. of Guests</span>
             </div>
+
             <div>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Linkedln.jpg" alt="Linkedln Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Facebook.jpg" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./index.html">
-                            <img src="./images/Instagram.jpg" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
+              <ul>
+                <li>
+                  <div>
+                    <span>Sarah</span>
+                    <span>#127456</span>
+                    <span>+1 (314) 344-0366</span>
+                    <span>Inside Wedding</span>
+                    <span>03.01.2024</span>
+                    <span>456</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Alex</span>
+                    <span>#127457</span>
+                    <span>+1 (540) 953-2839</span>
+                    <span>Outside Wedding</span>
+                    <span>05.01.2024</span>
+                    <span>223</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Emily</span>
+                    <span>#127458</span>
+                    <span>+1 (269) 254-8512</span>
+                    <span>Delux Wedding</span>
+                    <span>08.01.2024</span>
+                    <span>124</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Ali</span>
+                    <span>#127459</span>
+                    <span>+1 (601) 659-7589</span>
+                    <span>Inside Wedding</span>
+                    <span>12.01.2024</span>
+                    <span>543</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <a href="./index.html"></a>
+        Go "Orders" page to see the details
+        <img src="" alt="Image of arrow icon" />
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <h4>Event Planning Services</h4>
+            <ul>
+              <li>
+                <p>Wedding</p>
+                <p>Baby Shower</p>
+              </li>
+              <li>
+                <p>Bachelor's/Bachelorettes's Party</p>
+                <p>Gender Reveal Party</p>
+              </li>
+              <li>
+                <p>Birthday Party</p>
+                <p>Business Events</p>
+              </li>
+              <li>
+                <p>Graduation Party</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Other Services</h4>
+            <ul>
+              <li>
+                <p>Event photographers</p>
+                <p>Music</p>
+              </li>
+              <li>
+                <p>Catering</p>
+                <p>Event Venues</p>
+              </li>
+              <li>
+                <p>Entertainment</p>
+              </li>
+              <li>
+                <p>Make-up Artists</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
-    <script>
-        // Sayfalar arasında geçiş yapma fonksiyonu
-        function showPage(pageId) {
-            // Tüm sayfa elemanlarını seç
-            const pages = document.querySelectorAll('.page');
+  <div id="page14" class="page">
+    <header>
+      <ul>
+        <li>
+          <a href="./index.html">
+            <img src="./images/PartyPaletteLogo.jpg" alt="Logo" />
+            PartyPalette<alt>.support team</alt></a>
+        </li>
+      </ul>
 
-            // Tüm sayfaları gizle
-            pages.forEach(page => page.classList.remove('active'));
+      <nav>
+        <p>my profile</p>
+        <img src="images/human-icon.jpg" alt="Image of human icon" />
+      </nav>
+    </header>
+    <div>
+      <div>
+        <div>
+          <div>
+            <img src="" alt="Image of gear icon" />
+          </div>
+          <div>
+            <p></p>
+            <img src="./images/mail-icon.jpg" alt="Image of mail icon" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <form method="GET">
+              <label for="search"></label>
+              <input type="search" id="search" name="query" placeholder="search" />
+            </form>
+          </div>
+          <div>
+            <ol>
+              <li>
+                <div>
+                  <label>
+                    <input type="checkbox" name="checkbox1" />
+                    <p>
+                      <bold>Sarah</bold>-Need Help
+                    </p>
+                    <p>Could you please guide me through the...</p>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="checkbox2" />
+                  <p>
+                    <bold>Alex</bold>-Information Request
+                  </p>
+                  <p>I recently came across your website and...</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="checkbox3" />
+                  <p>
+                    <bold>Emily</bold>-Password Reset Request
+                  </p>
+                  <p>I'm having trouble accessing my account...</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="checkbox3" />
+                  <p>
+                    <bold>Ali</bold>-Feedback on Recent Purchase
+                  </p>
+                  <p>I recently purchased one of the offer plan...</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="checkbox4" />
+                  <p>
+                    <bold>John</bold>-Order #12345 *Update*
+                  </p>
+                  <p>Problem solved. Company has contacted...</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="checkbox4" />
+                  <p>
+                    <bold>John</bold>-Order #12345
+                  </p>
+                  <p>I placed an order on your website two...</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div>
+          <h2>Password Reset Request</h2>
+          <p>
+            <alt>Inbox</alt>
+          </p>
+          <div>
+            <img src="./Human-icon(2).jpg" alt="Image of HUman Icon" />
+            <p>
+              <bold>Emily</bold>-10 min ago to me
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="" alt="Image of star icon" />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <img src="" alt="Image of left arrow icon" />
+                </li>
+                <li>
+                  <img src="" alt="Image of ellipsis" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p>Password Reset Request</p>
+            <p>Hi Support Team,</p>
+            <p>
+              I'm having trouble accessing my account on your platform. It
+              seems that I've forgotten my password. Could you please assist
+              me in resetting it or provide instructions on how I can regain
+              access to my account?
+            </p>
+            <p>Thank you for your help.</p>
+            <p>Sincerly,</p>
+            <p>Emily</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h4>Event Planning Services</h4>
+            <ul>
+              <li>
+                <p>Wedding</p>
+                <p>Baby Shower</p>
+              </li>
+              <li>
+                <p>Bachelor's/Bachelorettes's Party</p>
+                <p>Gender Reveal Party</p>
+              </li>
+              <li>
+                <p>Birthday Party</p>
+                <p>Business Events</p>
+              </li>
+              <li>
+                <p>Graduation Party</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Other Services</h4>
+            <ul>
+              <li>
+                <p>Event photographers</p>
+                <p>Music</p>
+              </li>
+              <li>
+                <p>Catering</p>
+                <p>Event Venues</p>
+              </li>
+              <li>
+                <p>Entertainment</p>
+              </li>
+              <li>
+                <p>Make-up Artists</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>help</p>
+        <hr />
+        <p>contact</p>
+        <hr />
+        <p>terms of use</p>
+        <hr />
+        <p>cookies</p>
+        <hr />
+        <p>language</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Linkedln.jpg" alt="Linkedln Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Facebook.jpg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <img src="./images/Instagram.jpg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 
-            // Seçilen sayfayı görünür yap
-            document.getElementById(pageId).classList.add('active');
-        }
-    </script>
+  <script>
+    // Sayfalar arasında geçiş yapma fonksiyonu
+    function showPage(pageId) {
+      // Tüm sayfa elemanlarını seç
+      const pages = document.querySelectorAll(".page");
+
+      // Tüm sayfaları gizle
+      pages.forEach((page) => page.classList.remove("active"));
+
+      // Seçilen sayfayı görünür yap
+      document.getElementById(pageId).classList.add("active");
+    }
+  </script>
 </body>
+
 </html>
